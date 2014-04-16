@@ -1,0 +1,75 @@
+/*GB Main Article's Definition for the home page*/
+.gb1 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+}
+
+/*GB Left Column Headers Definition for the home page*/
+.gbleft 
+{
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+/*GB Left Column Definition for the home page*/
+.gbnews 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 9pt
+}
+/*GB Article Header Definitions for the home page*/
+.gbmainhead 
+{
+    COLOR: #BF0000;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 11pt
+}
+/*Main Header Definition for pageview page*/
+.pageviewbody
+{
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+/*GB Article Sub-Header Definitions for the home page*/
+.gbsubhead 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 10pt
+}
+INPUT
+{
+    COLOR: #D40000;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 8pt;
+    HEIGHT: 13pt;
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid;
+}
+select
+{
+    COLOR: #D40000;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 8pt;
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid
+}
+

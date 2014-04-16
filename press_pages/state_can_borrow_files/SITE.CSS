@@ -1,0 +1,16 @@
+body  { background-color: White; margin: 0px; padding: 0px }
+p  { color: black; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+td  { color: black; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.footer { font-size: 10px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.whtext { color: white; font-weight: bold; font-size: 12px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subhead  { color: black; font-weight: bold; font-size: 14px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.redhead { color: #900; font-weight: bold; font-size: 18px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.whhead  { color: #fff; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+a:link  { color: #191970; text-decoration: none }
+a:visited  { color: #191970; text-decoration: none }
+a:hover  { color: #505050; text-decoration: underline }
+a:active  { color: #505050; text-decoration: underline }
+.nav:link { color: #fff; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.nav:visited { color: #fff; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.nav:hover { color: #ff0; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.nav:active { color: #ff0; font-weight: bold; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }

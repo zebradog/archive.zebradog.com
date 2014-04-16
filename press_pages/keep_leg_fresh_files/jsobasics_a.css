@@ -1,0 +1,122 @@
+/* LAST UPDATED BY STANTON 10/05/04 3:10 p.m. */
+
+.ad_display {border: 0px solid #fff;}
+.ad_hed {font: italic 10px/12px verdana, arial, helvetica; color: #666; margin: 0px; padding: 0px;}
+
+a.adtextlink:link {color: #990000;}
+a.adtextlink:hover {color: #990000;}
+a.adtextlink:active {color: #990000;}
+a.adtextlink:visited {color: #990000;}
+.afbox {
+	border-bottom: 1px solid #666;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	background: #fff;
+	}
+
+.afbox_full {
+	border: 1px solid #666;
+	background: #fff;
+	}
+	
+.afbox_ffc {
+	border: 1px solid #666;
+	background: #ffc;
+	}	
+
+a.af:link {color: #444; text-decoration: none;}
+a.af:visited {color: #444; text-decoration: none;}
+a.af:active {color: #444; text-decoration: none;}
+a.af:hover {color: #f30; text-decoration: none; border-bottom: 1px solid #f30;}
+
+a.btn:link {text-decoration: none; border: 0px;}
+a.btn:hover {text-decoration: none; border: 0px;}
+a.btn:active {text-decoration: none; border: 0px;}
+a.btn:visited {text-decoration: none; border: 0px;}
+.btn {text-decoration: none; border: 0px;}
+
+a.hmpgnav:link {font: bold 10px/12px verdana, arial, helvetica; color: #009; text-decoration: none;}
+a.hmpgnav:hover {font: bold 10px/12px verdana, arial, helvetica; color: #009; text-decoration: none; border-bottom: 1px solid #009;}
+a.hmpgnav:active {font: bold 10px/12px verdana, arial, helvetica; color: #009; text-decoration: none;}
+a.hmpgnav:visited {font: bold 10px/12px verdana, arial, helvetica; color: #009; text-decoration: none;}
+.hmpgnav:visited {font: bold 10px/12px verdana, arial, helvetica; color: #009; text-decoration: none;}
+
+.buttons {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #666666;
+	background-color: #FFFFFF;
+	text-align: center;
+	left: auto;
+	vertical-align: middle;
+	cursor: hand;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: -1px;
+	
+}
+
+.small {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+
+.smalltitle {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FF6600;
+	font-weight: bold;
+
+}
+
+.big {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.bodystyle {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px;
+}
+.smallbold {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.brdtop {border-top: 1px solid #666;}
+/* .brdbtm {border-bottom: 1px solid #666;} */
+.brdbth {border-top: 1px solid #666;}
+
+.jso2k4hed { background-image: url(http://graphics.jsonline.com/graphics/general/art/clamp2k4/backtileb.gif);}
+.jso2k4hmpghed { background-image: url(http://graphics.jsonline.com/graphics/general/art/clamp2k4/backtile_hmpg01.gif);}
+.adtopblk2k4 {
+	background-image: url(http://graphics.jsonline.com/graphics/general/art/clamp2k4/adbacktile.gif);
+	background-repeat: no-repeat;
+}
+
+form {margin: 0px; padding: 0px;}
+.searchbox {font: normal 10px/12px arial, helvetica; margin: 0px; padding: 2px; background: #fff;}
+.jsomenu {font: normal 10px/12px arial, helvetica; margin: 0px; padding: 0px;  background: #fff;}
+
+.td_top {font: bold 10px/12px verdana, arial, helvetica; background: #ccc;}
+.td_even {font: normal 10px/12px verdana, arial, helvetica; background: #fff;}
+.td_odd {font: normal 10px/12px verdana, arial, helvetica; background: #e0e0e0;}
+
+.col_0 {font: normal 4px/4px verdana, arial, sans-serif; color: #fff; color: #000;}
+

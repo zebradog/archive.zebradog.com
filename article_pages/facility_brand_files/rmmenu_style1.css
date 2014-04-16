@@ -1,0 +1,70 @@
+  /* CoolMenus 4 - default styles - do not edit */
+  .clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+  /* CoolMenus 4 - default styles - end */
+
+  /*Style for the background-bar*/
+  .clBar{position:absolute; width:10; height:10; background-color: Silver; layer-background-color: Silver;
+  	visibility:hidden; background-image : url(../200511gc03.php_files/images/separator2b.gif); layer-background-image : url(../200511gc03.php_files/images/separator2b.gif); background-repeat : repeat-x;}
+
+  /*Styles for level 0*/
+  .clLevel0,.clLevel0over{position:absolute; padding:2px; font-family:verdana,arial,helvetica; font-size:13px; font-weight:bold; text-align:center;}
+  .clLevel0{background-color:Black; layer-background-color:Black; color:Navy; background-image : url(../200511gc03.php_files/images/separator4.gif);  layer-background-image : url(../200511gc03.php_files/images/separator4.gif);  background-repeat : repeat-x;}
+  .clLevel0over{background-color:Black; layer-background-color:Black; color:Yellow; cursor:pointer; cursor:hand; }
+  .clLevel0border{position:absolute; visibility:hidden; background-color:Gray; layer-background-color:Gray}
+
+  /*Styles for level 1*/
+  .clLevel1, .clLevel1over{position:absolute; padding:2px; font-family:verdana, arial,helvetica; font-size:12px; font-weight:bold}
+  .clLevel1{background-color:Black; layer-background-color:Black; color:Black; background-image : url(../200511gc03.php_files/images/separator4.gif); background-repeat : repeat-x;}
+  .clLevel1over{background-color:Black; layer-background-color:Black; color:Blue; background-image : url(../200511gc03.php_files/images/separator4.gif); background-repeat : repeat-x; cursor:pointer; cursor:hand; }
+  .clLevel1border{position:absolute; visibility:hidden; background-color:Gray; layer-background-color:Gray}
+
+  /*Styles for level 2*/
+  .clLevel2, .clLevel2over{position:absolute; padding:2px; font-family:verdana,arial,helvetica; font-size:11px; font-weight:bold}
+  .clLevel2{background-color:Black; layer-background-color:Black; color:Black; background-image : url(../200511gc03.php_files/images/separator4.gif); background-repeat : repeat;}
+  .clLevel2over{background-color:Black; layer-background-color:Black; color:Blue; cursor:pointer; cursor:hand; }
+  .clLevel2border{position:absolute; visibility:hidden; background-color:Gray; layer-background-color:Gray}
+/* Special Class */
+  .clLevel2b, .clLevel2bover{position:absolute; padding:2px; font-family:verdana,arial,helvetica; font-size:11px; font-weight:bold}
+  .clLevel2b{background-color:Black; layer-background-color:Black; color:Black; background-image : url(../200511gc03.php_files/images/separator5_2h.gif); background-repeat : repeat;}
+  .clLevel2bover{background-color:Black; layer-background-color:Black; color:Blue; cursor:pointer; cursor:hand; }
+
+
+/* MENU NUMBER 2 */
+/*Style for the background-bar*/
+.cl2Bar{position:absolute; width:10; height:10; background-color:Silver; layer-background-color:Silver; visibility:hidden}
+
+/*Styles for level 0*/
+.cl2Level0,.cl2Level0over{
+	position:absolute;
+	padding: 1px 2px 1px 4px;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align : center;
+	font-weight:bold;
+	
+}
+.cl2Level0{background-color:white; layer-background-color:white; color:#336699;}
+.cl2Level0over{background-color:#336699; layer-background-color:#336699; color:Yellow; cursor:pointer; cursor:hand; }
+.cl2Level0border{position:absolute; visibility:hidden; background-color:#AF454E; layer-background-color:#AF454E}
+.cl2Header{background-color:#336699; layer-background-color:#336699; color:#ffffff; font-family: sans-serif; font-size: 12px; font-weight:bold; cursor:pointer; text-align :center; cursor:hand; }
+
+/*Styles for level 1*/
+.cl2Level1, .cl2Level1over{
+	position:absolute;
+	padding: 1px 2px 1px 4px;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align : left;
+}
+.cl2Level1{background-color:white; layer-background-color:white; color:#336699;}
+.cl2Level1over{
+	background-color:#336699;
+	layer-background-color:#336699;
+	color:Yellow;
+	cursor:pointer;
+	cursor:hand;
+	vertical-align : bottom;
+}
+.cl2Level1border{position:absolute; visibility:hidden; background-color:#AF454E; layer-background-color:#AF454E}
+  
+

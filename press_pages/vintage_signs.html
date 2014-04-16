@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Badger Herald - University of Wisconsin-Madison</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="Shortcut Icon" href="/i/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="/s/lib.js"></script>
+<script type="text/javascript" src="/s/popup.js"></script>
+<script type="text/javascript" >
+	
+// redefining default features
+var _POPUP_FEATURES = 'location=0,statusbar=0,menubar=0,width=400,height=400';
+
+listen('load', window, function() {
+	listen('click', 'popup-listen', event_popup );
+	listen('click', 'popup-feat'  , event_popup_features('location=0,statusbar=0,menubar=0,width=190,height=300') );
+	mlisten('click', getElementsByClass('popup','a'), event_popup );
+});
+
+</script>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7412613603760704";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="4792711099";
+google_ad_type = "text";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "333333";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+<style type="text/css" media="screen">
+<!--
+@import url(/c/layout.css);
+
+#masthead {background-image: url(/i/masthead_new_news.gif)}
+
+
+#menunav li#news a:link {border-left: 5px solid #09497F; color: #333; padding-left: 3px; width: 129px;}
+#menunav li#news a:active {border-left: 5px solid #09497F; color: #333; padding-left: 3px; width: 129px;}
+#menunav li#news a:visited {border-left: 5px solid #09497F; color: #333; padding-left: 3px; width: 129px;}
+#menunav li#news a:hover {border-left: 5px solid #09497F; color: #333; padding-left: 3px; width: 129px;}
+
+body {border-top: solid 8px #09497F;}
+
+#content img {padding: 8px; padding-right: 0;}
+#content p {padding-bottom: 8px;}
+#insert {width: 202px; float: right; border: 1px solid #09497F;}
+html>body #insert {width: 200px;}
+#inserthead {background: #eee; float: none;}
+#inserthead p {color: #666; font-size: 10px; line-height: 14px;}
+.email {background: url(/i/icon_email.gif) 1px no-repeat; padding-left: 21px; padding-top: 5px; margin-left: 8px;}
+.print {background: url(/i/icon_print.gif) 1px 5px no-repeat; padding-left: 21px; padding-top: 5px; margin-left: 8px;}
+h5#byline {color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; text-decoration: none; font-weight: normal; margin: 0; padding: 0; padding-top: 2px;}
+#byline a {font-weight: bold; color: #333;}
+h5#date {color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; text-decoration: none;font-weight: normal; margin: 0; padding: 0; padding-bottom: 5px;}
+.reg h3 {background: url(/i/icon_register.gif) 1px 7px no-repeat; padding-left: 19px;}
+.feedinfo {font-weight: normal;}
+#insert {padding-bottom: 8px;}
+#insert h6 {color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; font-weight: bold; text-decoration: none; padding-left: 8px; padding-right: 8px;}
+#insert p {font-size: 10px; line-height: 16px; padding-right: 8px;}
+#insert li {font-size: 10px; line-height: 16px; margin-bottom: 3px;}
+#mailform { font: normal 10px Verdana, Arial, Helvetica, sans-serif; } 
+#mailform fieldset { border: 0; }
+#feedback {height: 100%; margin: 8px; margin-left: 0; border: 1px solid #09497F;}
+#feedhead h5 {margin: 0; padding: 0; padding-left: 8px; padding-top: 4px; line-height: 16px;}
+#feedhead p {font-size: 10px; line-height: 14px; padding: 0; margin: 0; padding-left: 8px;}
+#feedhead {background: #eee; padding-bottom: 4px;}
+#feedbody {padding: 8px; padding-top: 12px;}
+#feedbody h6 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; font-weight: bold; padding-left: 19px;}
+#feedbody p {padding-left: 19px; font-size: 11px; line-height: 16px;}
+#add {background: #eee; height: 100%}
+#add h6 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; margin-bottom: 0; padding-bottom: 0; padding-left: 8px; padding-right: 8px;}
+#add h5 { padding-left: 8px; padding-right: 8px;}
+#add p {font-size: 10px; line-height: 15px; padding-left: 8px; padding-right: 8px;}
+#add form {margin: 0;}
+#add .button {font-size: 11px;}
+.date {color: #666; font-size: 10px; line-height: 14px; text-decoration: none; padding-bottom: 5px;}
+.reg h6 {background: url(/i/icon_register.gif) 1px 4px no-repeat;}
+.feedinfo {font-weight: normal;}
+.del h6 {color: #aaa;}
+.del p {color: #aaa;}
+.anon {display: none;}
+.etc {color: #999;}
+#floater {float: right; width: 200px; margin: 8px; margin-right: 10px;}
+#floater img {float: none; padding: 0; margin: 0;}
+#content h2 {margin-top: -8px;}
+p.fullsize {font-size: 9px; text-align: right; padding-right: 15px; margin: 0; background: white url(/i/icon_fullsize.gif) no-repeat 100% 35%;}
+p.photocredit {font-size: 9px; text-align: left; margin: 0; padding: 0;}
+-->
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="/c/print_story.css" />
+<link rel="stylesheet" type="text/css" media="screen" title="User Defined Style" href="/c/hideAnon.css" />
+
+</head>
+<body id="news">
+<div id="wrapper">
+	<div id="tools">
+		
+    <div id="weather"></div>
+    <div id="search">
+<p><span><a href="/archives"> Archives</a></span></p>
+		</div><!-- end search -->	</div><!-- end tools -->
+	<div id="header">
+				<div id="masthead">
+			<h1>The Badger Herald</h1>
+		</div><!-- end masthead -->				<div id="addon">
+		</div><!-- end addon -->
+	</div><!-- end header -->
+	<div id="main">
+		<div id="area57">
+			<div id="content">
+		  <h2><a href="http://badgerherald.com/news/">NEWS</a></h2>
+			<h3>Madison features vintage, modern signs downtown</h3>
+			<div id="floater">
+                
+           <!-- end img1m -->          
+           <!-- do all of this if there is a picture -->
+            
+          <p class="fullsize">
+            <!-- end img1f -->
+            <a href="badger_liq_bf_416.jpg" onclick="raw_popup('badger_liq_bf_416.jpg'); return false"> 
+            <!-- end img1f -->
+            <img src="vintage_signs/badger_liq_bf_202.jpg" alt="Madison features vintage, modern signs downtown" width="202" height="303" /> 
+            </a> </p>
+          <p class="photocredit">BRYAN FAUST/Herald photo</p> <!-- end img1c -->
+           <!-- end img1 -->
+        
+				<div id="insert">						
+					<div id="inserthead">
+            						<p id="emailStoryToggle" class="email"><a href="javascript://" onclick="document.getElementById('emailStoryToggle').style.display='none'; document.getElementById('emailStoryForm').style.display='block';">Email this story</a></p>
+						<div id="emailStoryForm" style="display: none;">
+            <form method="get" action="http://badgerherald.com/cgi-bin/mt/mt-mail-entry.cgi" name="mail_form" id="mailform">
+              <input type="hidden" name="entry_id" value="14199" />
+          
+              <fieldset>
+              <label for="to">Recipient email address:</label><br />
+              <input tabindex="1" id="to" name="to" value="" />
+              </fieldset>
+          
+              <fieldset>
+              <label for="from">Your email address:</label><br />
+              <input tabindex="2" id="from" name="from" value="" />
+              </fieldset>
+          
+              <input style="font-weight: bold;" type="submit" name="post" value=" Send " />
+            </form>
+            </div>
+						
+						<p class="print"><em>Looking for a print version?</em><br />  Simply choose &lsquo;Print&rsquo; on your computer and a printer-friendly document will be generated.</p>
+					</div>
+					<div id="insertbody">
+						<h6>Feedback:</h6>
+						<p style="margin-left: 8px;">Read <a href="http://badgerherald.com/news/2005/02/25/madison_features_vin.php#feedback">2 comments</a> or <a href="http://badgerherald.com/news/2005/02/25/madison_features_vin.php#add">Add yours</a></p>
+
+            
+
+						<h6>Also by Aubre Andrus:</h6>
+						<ul>
+                          <li><a href="http://badgerherald.com/news/2005/02/25/madison_features_vin.php">Madison features vintage, modern signs downtown</a> (February 25, 2005)</li>
+                          <li><a href="http://badgerherald.com/news/2005/02/24/public_funding_will_.php">Public funding will go toward pool</a> (February 24, 2005)</li>
+                          <li><a href="http://badgerherald.com/news/2005/02/24/city_discusses_launc.php">City discusses launch of bar smoking ban</a> (February 24, 2005)</li>
+                          <li><a href="http://badgerherald.com/news/2005/02/23/city_council_approve.php">City Council approves proposal for complex</a> (February 23, 2005)</li>
+                          <li><a href="http://badgerherald.com/news/2005/02/23/equipment_causes_cit.php">Equipment causes city blackouts</a> (February 23, 2005)</li>
+            
+            </ul>
+            
+            <h6>Related Stories:</h6>
+						<ul>
+                            <li><a href="http://badgerherald.com/news/2005/02/11/regents_approve_cons.php">Regents approve consolidation</a> (February 11, 2005)</li>
+                            <li><a href="http://badgerherald.com/news/2005/02/15/committee_hears_prop.php">Committee hears proposal from UHS</a> (February 15, 2005)</li>
+                            <li><a href="http://badgerherald.com/news/2005/01/20/uw_groups_plan_aid_f.php">UW groups plan aid for tsunami victims</a> (January 20, 2005)</li>
+                            <li><a href="http://badgerherald.com/news/2005/01/31/uw_introduces_worlds.php">UW introduces world's largest telescope</a> (January 31, 2005)</li>
+                            <li><a href="http://badgerherald.com/news/2005/02/04/nostalgic_history_pr.php">Nostalgic history provides dormitory sense of self</a> (February 04, 2005)</li>
+              
+            </ul>
+            
+					</div>
+				</div><!-- insert -->
+			</div><!-- close floater -->
+			
+			
+			<h5 id="byline">by <strong>Aubre Andrus</strong><!----></h5>			<h5 id="date">Friday, February 25, 2005</h5>
+			
+			<p>The reconstruction of State Street has paid careful consideration to a number of existing historic signs lining the thoroughfare, a few of which have outlived the businesses themselves.</p>
+
+<p>ZD Studio Inc., an internationally recognized design firm, created a logo for State Street and banners to decorate the light posts. According to Susan Schmitz, president of Downtown Madison Inc., the design team did a &#8220;good job&#8221; fitting the new signage on the street in with the old.</p>
+
+<p>&#8220;They really understand State Street as a historical area and that sense of place,&#8221; Schmitz said. &#8220;They understand all those dynamics. They understand that what makes the street come alive are the store fronts and people on the street.&#8221;</p>
+
+<p>Madison&#8217;s ZD Studio is currently working on the new crew house near the Lakeshore residence halls and helped design the Camp Randall Stadium logo, according to company Vice President Melanie Kranz.</p>
+
+<p>Kranz said the reconstruction of State Street &#8212; from the light posts to the State Street logo &#8212; adds to the history of the city.</p>
+
+<p>&#8220;We are starting to develop a history and celebrate State Street and recognize this as a really important part of our community,&#8221; Kranz said.</p>
+
+<p>ZD Studios Inc. President Mark Schmitz said the design of the older light posts and the modern seasonal banners hanging from them feature a unique combination. The &#8220;twinkle lights&#8221; brighten the banners and are also a special feature.</p>
+
+<p>&#8220;We wanted to bring a romance to State Street,&#8221; Mark Schmitz said.</p>
+
+<p>Susan Schmitz said it remains important for businesses like the Orpheum Theater to take care of their signage. Schmitz said it would be nice to restore the Orpheum sign to its original state when the theater opened in 1927 with marquee lights outlining the long sign.</p>
+
+<p>&#8220;That&#8217;s part of history &#8212; those signs are as important as the building,&#8221; she said. &#8220;It illustrates how important signs are in a pedestrian historic area like State Street.&#8221;</p>
+
+<p>Susan Schmitz said even small &#8220;sandwich signs,&#8221; the folding sidewalk signs advertising the lunch specials outside restaurants like Sunroom Café, are distinctive and give State Street a European flair.</p>
+
+<p>&#8220;Without those, it looks like a shopping mall,&#8221; Susan Schmitz said. &#8220;This really gives character to State Street.&#8221;</p>
+
+<p>Susan Schmitz said signs such as the animated one outside Badger Liquor would not be designed for a new business today. The fact that it says &#8220;ice cubes&#8221; and associates a school mascot with liquor makes it unique, Schmitz added.</p>
+
+<p>The vintage Badger Liquor sign is the only sign in Madison that is neon and animated, according to manager Andrew Beaulieu. Electric drips fall from a bottle on the sign, but an ordinance does not allow neon signs &#8212; at least of that size &#8212; in the city currently, Beaulieu added.</p>
+
+<p>According to Susan Schmitz, the redesign of State Street addressed unnecessary signage issues on State Street. Many blocks were cluttered with irrelevant signs for a pedestrian mall, Schmitz added, citing 30 signs on one block.</p>
+
+<p>&#8220;We get so many tourists to our city every year, and we are trying to help them navigate through the city and through State Street,&#8221; Kranz said.</p>
+
+			
+			<br class="clear" />
+			
+			<div id="feedback">
+						
+				<div id="feedhead">
+					
+            <h5>&nbsp;</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write ('<A HREF="http://adserver.journalinteractive.com/RealMedia/ads/click_lx.cgi/www.jsonline.com/bym/news/nov04/273208.asp/14717/x30/default/empty.gif/30633837636334653431656464353030" target="_top"><IMG SRC="http://adserver.journalinteractive.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');

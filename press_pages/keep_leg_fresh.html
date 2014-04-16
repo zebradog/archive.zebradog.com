@@ -1,0 +1,1032 @@
+<html><head><title>JS Online: Keeping legend fresh</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="resource-type" content="document">
+
+<meta name="distribution" content="GLOBAL">
+
+<meta name="copyright" content="Copyright 2003, Journal Sentinel Inc.">
+
+<meta http-equiv="pragma" content="no-cache">
+
+<meta name="robots" content="all">
+
+<meta name="description" content="Journal Sentinel Online is a multimedia news and information service of the Milwaukee Journal Sentinel and Journal Communications Inc., covering news, sports, business, entertainment and community stories in Milwaukee and Wisconsin.">
+
+<meta name="keywords" content="Packers, Packer, Green Bay, Packer Plus, Packer Plus Online, journal, interactive, journalsentinel, js, jso, jsonline.com, milwaukee, news, newspaper, on, online, onwisconsin, onwisconsin.com, sentinel, sentinel, wisconsin, NFL, Super Bowl, Pro Bowl, Football, Lambeau Field, Brett Favre, Reggie White, Ron Wolf, Ray Rhodes, Bob Harlan, Vince Lombardi, Bart Starr, Ray Nitschke, Draft, Free agency, Rushing, Passing, Field goals, Punting, Statistics, Audio report, Commentary, Calendar, news, Schedule, Super Bowl XXXI, Super Bowl XXXII, Milwaukee, Wisconsin">
+
+<style type="text/css"><!--
+
+
+
+/* { margin: T L B R; } */
+
+
+
+p.nv0 {margin: 0 5 6 5;}
+
+p.nv1 {margin: 0 2 5 2;}
+
+p.nv2 {margin: 0 5 15 5;}
+
+
+
+a:link {color: #060;}
+
+a:active {color: #600;}
+
+a:hover {color: #999;}
+
+
+
+a.nav:link {font: bold 9px/11px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+a.nav:active {font: bold 9px/11px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+a.nav:visited {font: bold 9px/11px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+
+
+a.nav02:link {font: bold 12px/14px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+a.nav02:active {font: bold 12px/14px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+a.nav02:visited {font: bold 12px/14px verdana, arial, sans-serif; color: #f90; text-decoration: none;}
+
+
+
+div.railblock {text-align: left;}
+
+
+
+--></style>
+
+
+
+
+
+<script language="JavaScript" src="keep_leg_fresh_files/feedinclude.js"></script>
+
+<script language="JavaScript" src="keep_leg_fresh_files/KRT.JS"></script>
+
+<script language="JavaScript" src="keep_leg_fresh_files/POPUPS.JS"></script>
+
+<script language="JavaScript" src="keep_leg_fresh_files/email_story.js"></script>
+
+<link rel="stylesheet" href="keep_leg_fresh_files/jsobasics_a.css">
+
+<link rel="stylesheet" href="keep_leg_fresh_files/JSOSB_A.CSS"><!-- AD CODE (THIS IS FROM AN INCLUDE)-->
+
+
+
+
+<script language="JavaScript"> 
+<!-- 	
+	if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/2')!=-1) {
+		_version=10;
+	}else{
+		_version=11;
+	}
+	
+
+// commented this out....
+/*	
+	var sitepage=window.location.hostname + window.location.pathname +"/1@";
+*/	
+
+// added this instead so that the filename "index.asp" is appended if the current URL ends with a / character
+	var sitepage=window.location.hostname + window.location.pathname;
+	
+	if (sitepage.substr(sitepage.length - 1) == "/") {
+		sitepage = sitepage + "index.asp"
+	}
+	
+	sitepage = sitepage +"/1872158230@";
+	
+	
+	var oas='http://adserver.journalinteractive.com/RealMedia/ads/';
+	
+	function DisplayAds(position, width, height) {
+		if (_version < 11) {
+			document.write ('<A HREF="http://adserver.journalinteractive.com/RealMedia/ads/click_nx.cgi/www.jsonline.com/adsections/new/default/@' + position +'" TARGET="_top"><IMG SRC="http://adserver.journalinteractive.com/RealMedia/ads/adstream_nx.cgi/www.jsonline.com/adsections/new/default/@' + position +'" BORDER="0"></a>');
+			document.write ('');
+		} else {
+			var oaspage= sitepage + position;
+			document.write ('<s'+'cript LANGUAGE="JavaScript" SRC="' + oas + 'adstream_jx.cgi/' + oaspage + '"><\/scr'+'ipt>');
+		}
+		document.close();
+	}
+// -->
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var dom = document.getElementById ? true:false;
+var nn4 = document.layers ? true:false;
+var ie4 = document.all ? true:false;
+
+function snazzyLayers(layerName,layerVis,hideForm){
+	layerVis = layerVis.toLowerCase();
+	if(dom == true){
+		document.getElementById(layerName).style.visibility = layerVis;
+		if((hideForm == true) && (ie4 == true)){
+		snazzyHideForm(layerVis);
+		}
+	} else if (nn4 == true){
+		document.layers[0].document[layerName].visibility = layerVis;
+	} else if (ie4 == true){
+		document.all[layerName].style.visibility = layerVis;
+		if((hideForm == true) && (ie4 == true)){
+			snazzyHideForm(layerVis);
+		}
+	}
+}
+	
+function snazzyHideForm(layerVis){
+	var coll = document.all.tags('select'); 
+	for (i=0; i<coll.length; i++) {
+	if(layerVis == 'visible'){
+    	coll(i).style.visibility = 'hidden'; 
+	    } else {
+		   	coll(i).style.visibility = 'visible'; 
+		}
+	}
+}
+	
+function adConstruct(tileWidth,tileHeight,popWidth,popHeight,zIndex,popDir,hideForm,tileFile,popFile,altFile,URLBase,ranNum,altTag){
+	var ranName = "pop" + ranNum;
+	inPopDir = popDir;
+	popDir = inPopDir.toLowerCase()
+	
+	if(popDir == "down"){
+		leftVal = 0;
+		topVal = tileHeight;
+	} else if(popDir == "left"){
+	leftVal = -(popWidth);
+		topVal = 0;
+	} else if(popDir == "right"){
+		leftVal = tileWidth;
+		topVal = 0;
+	} else if(popDir == "up"){
+		leftVal = 0;
+		topVal = -(popHeight);
+	} else {
+		leftVal = -(popWidth);
+		topVal = 0;
+	}
+
+	//if((dom == true) || (ie4 == true)){ -- COMMENTED DJJ . 10.14.2003
+	if(ie4 == true){
+		// Dennis - added this to make it work - you can fix later
+			if(popW == 234) {
+				document.writeln("<div id=\"sideAds\" style=\"position:relative; width:"+tileWidth+"px; height:"+(tileHeight+3)+"px; z-index:"+zIndex+"; visibility: visible; display:inline;\">");
+			} else {
+				document.writeln("<div id=\"sideAds\" style=\"position:relative; width:"+tileWidth+"px; height:"+tileHeight+"px; z-index:"+zIndex+"; visibility: visible; display:inline;\">");
+			}
+			document.writeln("<div style=\"position:absolute; width:"+tileWidth+"px; height:"+tileHeight+"px; z-index:"+zIndex+"; left:0px; top:0px; visibility:visible;\">");
+			document.writeln("<a href=\""+URLBase+"\" onMouseOver=\"snazzyLayers('"+ranName+"','visible',"+hideForm+");\" onMouseOut=\"snazzyLayers('"+ranName+"','hidden',"+hideForm+");\">");
+			document.writeln("<img src=\""+tileFile+"\" width=\""+tileWidth+"\" height=\""+tileHeight+"\" border=\"0\" alt=\""+altTag+"\"></a></div>");
+			document.writeln("<div id=\""+ranName+"\" style=\"position:absolute; width:"+popWidth+"px; height:"+popHeight+"px; z-index:"+zIndex+"; left:"+leftVal+"px; top:"+topVal+"px; visibility:hidden;\">");
+			document.writeln("<a href=\""+URLBase+"\" onMouseOver=\"snazzyLayers('"+ranName+"','visible',"+hideForm+");\" onMouseOut=\"snazzyLayers('"+ranName+"','hidden',"+hideForm+");\">");
+			document.writeln("<img src=\""+popFile+"\" width=\""+popWidth+"\" height=\""+popHeight+"\" border=\"0\" alt=\""+altTag+"\"></a></div>");
+			document.writeln("<br clear=\"all\"></div>");
+		} else {
+			document.writeln("<a href=\""+URLBase+"\"><img src=\""+altFile+"\" width=\""+tileWidth+"\" height=\""+tileHeight+"\" border=\"0\" alt=\""+altTag+"\"></a>");
+		}
+}
+//-->
+</script><!-- END AD CODE -->
+
+
+
+
+
+
+
+
+<meta name="date" content="2003-8-9"><meta name="description" content=" As a young boy, Mark Schmitz idolized Donny Anderson, the former running back for the Green Bay Packers."><style type="text/css"><!--
+
+.ownav_cellA {font: bold 10px/12px verdana, arial, helvetica; color: #999; text-decoration: none; background: #009;}
+
+.ownav_cellB {font: normal 4px/4px verdana, arial, helvetica; color: #999; text-decoration: none; background: #006;}
+
+.ownav_form {margin: 0px; padding: 0px;}
+
+.ownav_field {font: normal 10px/11px verdana, arial, helvetica; color: #000; text-decoration: none; padding: 2px; background: #e0e0e0;}
+
+.ownav_select {font: normal 10px/11px verdana, arial, helvetica; color: #000; text-decoration: none; padding: 1px; background: #e0e0e0;}
+
+a.ownav:link {font: bold 10px/12px verdana, arial, helvetica; color: #fff; text-decoration: none;}
+
+a.ownav:hover {font: bold 10px/12px verdana, arial, helvetica; color: #fff; text-decoration: none; border-bottom: 1px solid #fff;}
+
+a.ownav:active {font: bold 10px/12px verdana, arial, helvetica; color: #fff; text-decoration: none;}
+
+a.ownav:visited {font: bold 10px/12px verdana, arial, helvetica; color: #fff; text-decoration: none;}
+
+--></style></head>
+<body bgcolor="#ffffff" background="keep_leg_fresh_files/BKSPEC.GIF" text="#000000" link="#006600" vlink="#cc9900" alink="#999999" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"><a name="top"></a>
+
+
+
+
+<a name="top"></a>
+
+<!-- ONWISCONSIN NETWORK HEADER -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr>
+
+<td width="1%" bgcolor="#000099" align="left" valign="middle" class="ownav_cellA"><a href="http://www.onwisconsin.com/" target="_top"><img src="keep_leg_fresh_files/onwis_network01.gif" alt="Part of the OnWisconsin.com Network - click here" width="110" height="22" border="0"></a></td>
+
+<td width="97%" bgcolor="#000099" align="left" valign="middle" class="ownav_cellA"><font face="verdana, arial, helvetica" size="1" color="#999999"><b>
+
+	<!-- NETWORK LINKS -->
+
+	<a href="http://www.onwisconsin.com/redir/email.asp" target="_top" class="ownav"><font color="#ffffff">E-MAIL</font></a> |
+
+	<a href="http://www.jsonline.com/" target="_top" class="ownav"><font color="#ffffff">JS ONLINE</font></a> |
+
+	<a href="http://www.todaystmj4.com/" target="_top" class="ownav"><font color="#ffffff">TMJ4</font></a> |
+
+	<a href="http://www.620wtmj.com/" target="_top" class="ownav"><font color="#ffffff">WTMJ</font></a> |
+
+	<a href="http://www.wkti.com/" target="_top" class="ownav"><font color="#ffffff">WKTI</font></a> |
+
+	<a href="http://www.mkeonline.com/" target="_top" class="ownav"><font color="#ffffff">MKE</font></a> 
+
+	<!-- END NETWORK LINKS -->
+
+<br></b></font></td>
+
+<td width="1%" bgcolor="#000099"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="20" height="1" border="0"></td>
+
+<td width="1%" bgcolor="#000099" align="right" valign="middle">
+
+
+
+	<table width="100%" cellspacing="0" cellpadding="3" border="0"><tbody><tr><form action="http://www.jsonline.com/search/results.asp" class="ownav_form"></form>
+
+	<td width="1%" bgcolor="#000099" align="center">
+
+	<input type="hidden" name="searchtype" value="web">
+
+	<input type="text" size="12" maxlength="255" value="Web search" name="Keywords" onfocus="this.form.Keywords.value = ''" class="ownav_field">
+
+	</td>
+
+	<td width="1%" bgcolor="#000099" align="center"><input type="image" src="keep_leg_fresh_files/button-go000099b.gif" alt="Click to search" width="24" height="20" border="0"></td>
+
+	
+
+	<td width="1%" bgcolor="#000099" align="center" class="ownav_cellA"><font face="verdana, arial, helvetica" size="1" color="#999999"><b> | </b></font></td>
+
+	<form name="owNavList"></form>
+
+	<td width="1%" bgcolor="#000099" align="center"><select name="features" size="1" onchange="functionowNavList()" class="ownav_select"><option selected="selected">Network Features</option><option>------------</option><option value="http://www.onwisconsin.com/redir/email.asp">E-mail Services</option><option value="http://www.onwisconsin.com/redir/emaildirectory.asp">E-mail Directory</option><option value="http://www.onwisconsin.com/redir/lottery.asp">Lottery Results</option><option value="http://www.jsonline.com/">News Updates</option><option value="http://www.onwisconsin.com/redir/maps.asp">Map &amp; Directions</option><option value="http://www.onwisconsin.com/redir/searchbyphonenumber.asp">Search By Phone #</option><option value="http://www.jsonline.com/sports/">Sports Updates</option><option value="http://www.onwisconsin.com/redir/stocks.asp">Stock Quotes</option><option value="http://www.onwisconsin.com/redir/tv.asp">TV Listings</option><option value="http://www.onwisconsin.com/redir/weather.asp">Weather Forecasts</option><option value="http://www.onwisconsin.com/redir/whitepages.asp">White Pages</option><option value="http://www.onwisconsin.com/redir/yellowpages.asp">Yellow Pages</option><option>------------</option><option value="http://www.onwisconsin.com/live/">OnWisconsin.com LIVE</option><option value="http://www.onwisconsin.com/arts/">Arts</option><option value="http://www.onwisconsin.com/books/">Bookshelf</option><option value="http://www.onwisconsin.com/dining/">Dining</option><option value="http://www.onwisconsin.com/movies/">Movies</option><option value="http://www.onwisconsin.com/music/">Music &amp; Night Life</option><option value="http://www.onwisconsin.com/puzzles/">Puzzles &amp; Comics</option><option value="http://www.onwisconsin.com/tvradio/">TV &amp; Radio</option><option value="http://www.onwisconsin.com/visit/">Visitors' Guide</option><option>------------</option><option value="http://www.onwisconsin.com/homes/">OnWisconsin.com Homes</option><option value="http://www.onwisconsin.com/travel/">OnWisconsin.com Travel</option><option>------------</option><option value="http://www.onwisconsin.com/adfinder/">AdFinder</option><option value="http://www.onwisconsin.com/redir/jobs.asp">Jobs</option><option value="http://www.onwisconsin.com/redir/cars.asp">Cars</option><option value="http://www.onwisconsin.com/homes/">Real Estate</option><option value="http://www.onwisconsin.com/redir/rentals.asp">Rentals</option><option value="http://www.onwisconsin.com/redir/personals.asp">Personals</option><option value="http://www.jsonline.com/classified/">General Classifieds</option><option value="http://www.onwisconsin.com/redir/tickets.asp">Buy &amp; Sell Tickets</option><option value="http://www.onwisconsin.com/redir/contests.asp">Contests</option><option>------------</option><option value="http://www.onwisconsin.com">Content sites...</option><option value="http://www.jsonline.com">JSOnline.com</option><option value="http://www.jsonline.com/packer/insider/">Packer Insider</option><option value="http://www.todaystmj4.com/">TODAY'S TMJ4</option><option value="http://www.620wtmj.com/">Newsradio 620 WTMJ</option><option value="http://www.wkti.com/">94.5 WKTI</option><option value="http://www.onwisconsin.com/redir/cni.asp">CNI Newspapers</option><option value="http://www.onwisconsin.com/redir/lakecountry.asp">Lake Country</option></select></td>
+
+	<script language="javascript">
+
+	<!--
+
+	function functionowNavList()
+
+	{parent.location=document.owNavList.features.options[document.owNavList.features.selectedIndex].value}
+
+	//-->
+
+	</script>
+
+	<td width="1%" bgcolor="#000099" align="center" class="ownav_cellA"><font face="verdana, arial, helvetica" size="1" color="#999999"><b> | </b></font></td>
+
+	<td width="1%" bgcolor="#000099" align="left"><a href="http://www.onwisconsin.com/redir/realcities.asp"><img src="keep_leg_fresh_files/realcities_32x32.gif" alt="Visit other Real Cities Network partners" width="32" height="32" border="0"></a></td>
+
+	</tr></tbody></table>
+
+		
+</td></tr>
+
+<tr><td colspan="4" bgcolor="#000066" class="ownav_cellB"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="3" border="0"></td></tr>
+
+</tbody></table>
+
+<!-- END ONWISCONSIN NETWORK HEADER --><!-- MAIN JS ONLINE HEADER -->
+
+<table width="770" cellspacing="0" cellpadding="0" border="0">
+
+<tbody><tr>
+
+<td colspan="4"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="6" border="0"></td>
+
+</tr>
+
+<tr>
+
+<td width="12"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="12" height="1" border="0"></td>
+
+<td width="174" bgcolor="#000000"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="174" height="1" border="0"></td>
+
+<td width="577" bgcolor="#000000"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="577" height="1" border="0"></td>
+
+</tr>
+
+<tr>
+
+<td width="12"><img src="keep_leg_fresh_files/jsohed_left01.gif" width="12" height="77" border="0"></td>
+
+<td width="174"><a href="http://www.jsonline.com/" class="btn"><img src="keep_leg_fresh_files/jsohed_left02b.gif" alt="JS ONLINE" width="174" height="77" border="0" class="btn"></a></td>
+
+<td width="577" class="jso2k4hed" align="right" valign="top"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+<tbody><tr>
+
+<td colspan="10"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="15" border="0"></td><td>
+
+</td><td rowspan="2" align="right" valign="bottom"><img src="keep_leg_fresh_files/jsohed_right03b.gif" width="14" height="29" border="0"></td>
+
+</tr>
+
+<tr>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/adfinder/" class="btn"><img src="keep_leg_fresh_files/adtb_adfinder.gif" alt="AdFinder" width="52" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/jobs.asp" class="btn"><img src="keep_leg_fresh_files/adtb_jobs.gif" alt="Jobs" width="29" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/cars.asp" class="btn"><img src="keep_leg_fresh_files/adtb_cars.gif" alt="Cars" width="30" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/homes/" class="btn"><img src="keep_leg_fresh_files/adtb_homes.gif" alt="Homes" width="39" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/rentals.asp" class="btn"><img src="keep_leg_fresh_files/adtb_rentals.gif" alt="Rentals" width="47" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/classifieds.asp" class="btn"><img src="keep_leg_fresh_files/adtb_classifiedsb.gif" alt="Classifieds" width="63" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/personals.asp" class="btn"><img src="keep_leg_fresh_files/adtb_personals.gif" alt="Personals" width="59" height="12" border="0" class="btn"></a></td>
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/tickets.asp" class="btn"><img src="keep_leg_fresh_files/adtb_tickets.gif" alt="Tickets" width="45" height="12" border="0" class="btn"></a></td>
+
+<!--<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/coupons.asp" class="btn"><img src="http://graphics.jsonline.com/graphics/general/art/clamp2k4/adtb_coupons.gif" alt="Coupons" width="51" height="12" border="0" class="btn"></a></td>-->
+
+<td align="center" valign="top"><a href="http://www.onwisconsin.com/redir/contests.asp" class="btn"><img src="keep_leg_fresh_files/adtb_contests.gif" alt="Contests" width="54" height="12" border="0" class="btn"></a></td>
+
+</tr>
+
+</tbody></table><input type="hidden" name="ct" value="JS2001">
+
+<input value="FileWrite" name="sd" type="hidden">
+
+<input value="@filewrite" name="c2" type="hidden">
+
+<input value="&gt;" name="o2" type="hidden">
+
+<input value="-1m" name="q2" type="hidden">
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+<tbody><tr>
+
+<td colspan="8"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="7" border="0"></td><td>
+
+</td><td rowspan="3" align="right"><a href="http://www.onwisconsin.com/redir/servicecenter.asp" class="btn"><img src="keep_leg_fresh_files/jsohed_right02b.gif" alt="Subscribe Online - Click Now" width="210" height="48" border="0" class="btn"></a></td>
+
+</tr>
+
+
+
+<form action="http://search.jsonline.com/results.asp" method="get"></form>
+
+<tr>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+
+<td align="right" valign="middle"><input type="text" size="18" maxlength="100" name="qu" value="Article search..." class="searchbox" onfocus="this.form.qu.value = ''"></td>	
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="3" height="1" border="0"></td>
+
+<td align="left" valign="middle"><input type="image" src="keep_leg_fresh_files/btn_go_16x20_002.gif" alt="GO" width="20" height="16" border="0" class="searchbtn"></td>
+
+
+
+<form name="navmainTop"></form>
+
+
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="15" height="1" border="0"></td>
+
+<td align="right" valign="middle"><img src="keep_leg_fresh_files/spyglass_18x16.gif" alt="" -="" width="18" height="16" border="0"></td>
+
+<td align="left" valign="middle"><select name="locations" size="1" class="jsomenu" onchange="functionnavmainTop()"><option selected="selected">SEARCH OPTIONS/TIPS...</option><option value="http://www.jsonline.com/search/">Archives Online</option><option value="http://www.jsonline.com/search/index.asp#tips">Article Search Tips</option><option value="#"> </option><option value="http://www.jsonline.com/search/">OTHER SEARCHES</option><option value="http://www.onwisconsin.com/adfinder/">AdFinder</option><option value="http://www.onwisconsin.com/arts/">Art Gallery Events</option><option value="http://www.onwisconsin.com/redir/cars.asp">Cars</option><option value="http://www.jsonline.com/classified">Classifieds</option><option value="http://www.jsonline.com/news/obits/">Death Notices</option><option value="http://www.onwisconsin.com/dining/">Dining Guide</option><option value="http://www.onwisconsin.com/homes/">Homes</option><option value="http://www.onwisconsin.com/redir/jobs.asp">Jobs</option><option value="http://www.onwisconsin.com/lottery/">Lottery Results</option><option value="http://www.onwisconsin.com/movies/">Movie Showtimes</option><option value="http://www.onwisconsin.com/redir/maps.asp">Maps &amp; Directions</option><option value="http://www.onwisconsin.com/music/">Night Life Events</option><option value="http://www.onwisconsin.com/redir/personals.asp">Personals</option><option value="http://www.onwisconsin.com/redir/rentals.asp">Rentals</option><option value="http://www.onwisconsin.com/redir/stocks.asp">Stock Quotes</option><option value="http://www.onwisconsin.com/redir/tickets.asp">Tickets</option><option value="http://www.onwisconsin.com/tvradio/">TV Listings</option><option value="http://www.onwisconsin.com/arts/">Performing Arts</option><option value="http://www.onwisconsin.com/redir/yellowpages.asp">Yellow Pages</option><option value="#"> </option><option value="http://www.jsonline.com/">JSONLINE.COM</option><option value="http://www.jsonline.com/">Home Page</option><option value="http://www.jsonline.com/badger/">Badger Plus Online</option><option value="http://www.jsonline.com/bym/">Business &amp; Your Money</option><option value="http://www.jsonline.com/chat/">Chat</option><option value="http://www.jsonline.com/news/editorials/">Editorials</option><option value="http://www.onwisconsin.com/live/">Entertainment</option><option value="http://www.jsonline.com/features/">Features</option><option value="http://www.jsonline.com/entree/">Food &amp; Home</option><option value="http://www.onwisconsin.com/dining/">Dining</option><option value="http://www.jsonline.com/alive/">Health &amp; Fitness</option><option value="http://www.jsonline.com/lifestyle/">Lifestyle</option><option value="http://www.jsonline.com/news/">News</option><option value="http://www.jsonline.com/news/obits/">Obituaries</option><option value="http://www.jsonline.com/photo/">Photo of the Day</option><option value="http://www.jsonline.com/packer/">Packer Plus Online</option><option value="http://www.jsonline.com/packer/insider/">Packer Insider</option><option value="http://www.onwisconsin.com/homes/">Real Estate</option><option value="http://www.jsonline.com/sports/">Sports</option><option value="http://www.jsonline.com/tech/">Technology</option><option value="http://www.onwisconsin.com/travel/">Travel</option><option value="http://www.jsonline.com/traffic/">Traffic</option><option value="http://www.onwisconsin.com/weather/">Weather</option><option value="http://www.onwisconsin.com/cars/">Cars</option><option value="#"> </option><option>JOURNAL SENTINEL SERVICES</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Start a subscription</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Place a vacation hold</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Pay your bill online</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Report a service concern</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Change of address</option></select></td>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="15" height="1" border="0"></td>
+
+</tr>
+
+
+
+
+
+
+
+	<script language="javascript">
+
+	<!--
+
+	function functionnavmainTop()
+
+	{parent.location=document.navmainTop.locations.options[document.navmainTop.locations.selectedIndex].value}
+
+	//-->
+
+	</script>
+
+	
+<tr>
+
+<td colspan="8"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="17" border="0"></td><td>
+
+</td></tr>
+
+</tbody></table></td>
+
+<td width="7"><img src="keep_leg_fresh_files/jsohed_right01b.gif" width="7" height="77" border="0"></td>
+
+</tr>
+
+</tbody></table>
+<table width="770" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr>
+
+<td rowspan="2" width="12"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="12" height="5" border="0"></td>
+
+<td rowspan="2" width="1" bgcolor="#666666" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="5" border="0"></td>
+
+<td width="4" bgcolor="#ffffff" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="4" height="1" border="0"></td>
+
+<td width="95" bgcolor="#ffffff" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="95" height="1" border="0"></td>
+
+<td width="8" bgcolor="#ffffff" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="8" height="1" border="0"></td>
+
+<td width="620" bgcolor="#ffffff" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="620" height="1" border="0"></td>
+
+<td width="8" bgcolor="#ffffff" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="8" height="1" border="0"></td>
+
+<td rowspan="2" width="1" bgcolor="#666666" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+
+<td width="6" bgcolor="#cccccc" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+
+<td width="1" bgcolor="#cccccc" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+
+<td width="6" bgcolor="#cccccc" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+
+<td rowspan="2" width="1" bgcolor="#666666" class="brdtop"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+
+<td rowspan="2" width="7"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="7" height="1" border="0"></td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#ffffff"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+
+<td bgcolor="#003300" align="left" valign="top"><font face="verdana, arial, helvetica" size="1">
+
+
+
+<a href="http://www.jsonline.com/packer/"><img src="keep_leg_fresh_files/coltop-main_95.gif" alt="Packer Plus Online" width="95" height="128" border="0"></a><br>
+
+<img src="keep_leg_fresh_files/SPEC_003.GIF" alt="---" width="95" height="5" border="0"><br>
+
+</font><div class="railblock">
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/" class="nav" target="_top">Packer Plus Online</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav" target="_top">Packer Insider</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/" class="nav" target="_top">News &amp; Features</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/prev/" class="nav" target="_top">Preview</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/rev/" class="nav" target="_top">Review</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/mail/" class="nav" target="_top">Fan Forum</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/image/" class="nav" target="_top">Photo Gallery</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/stat/" class="nav" target="_top">Stats &amp; Schedules</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://covers.jsonline.com/data/odds.html#nfl" class="nav" target="_top">Latest Odds</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://covers.jsonline.com/data/nfl/game/nfl_game.html" class="nav" target="_top">Game Matchups</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/sports/" class="nav" target="_top">JS Sports</a></font></p>
+
+</div>
+
+<font face="verdana, arial, helvetica" size="1"><img src="keep_leg_fresh_files/NAVBREAK.GIF" width="95" height="30" border="0"><br>
+
+
+
+</font><div style="margin: -3px 2px 3px; padding: 0pt;">
+
+<font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav"><img src="keep_leg_fresh_files/PI_70X40.GIF" alt="Packer Insider" width="70" height="40" border="0"><br>
+
+</a></font></div>
+
+
+
+<div style="margin: 0px; padding: 8px 0pt 6px;">
+
+
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav"><b>COLUMNISTS</b></a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/scmcgi_pi.asp" class="nav">McGinn</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/scchri_pi.asp" class="nav">Christl</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/schofm_pi.asp" class="nav">Hofmann</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/schunt_pi.asp" class="nav">Hunt</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/scnflbeat_pi.asp" class="nav">Silverstein</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/scpufa_pi.asp" class="nav">Pufall</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/scbraun_pi.asp" class="nav">Braun</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/columns/sclea_pi.asp" class="nav">Lea</a></font></p>
+
+
+
+<font face="verdana, arial, helvetica" size="1"><br>
+
+
+
+</font><p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav"><b>BLOGS</b></a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/weblogs/index.asp?id=3" class="nav">Christl</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/site/weblogs.asp?id=28" class="nav">Santana Dotson</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/site/weblogs.asp?groupid=3" class="nav">Fan Insiders</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/weblogs/index.asp?id=4" class="nav">On the Web</a></font></p>
+
+
+
+<font face="verdana, arial, helvetica" size="1"><br>
+
+
+
+</font><p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav"><b>MORE INSIDER</b></a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav">Fan Spot</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/chat" class="nav">Chats</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/multimedia/" class="nav">Audio</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/downloads/index.asp#photos" class="nav">Photos</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav">History</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/" class="nav">Fantasy Football</a></font></p>
+
+</div>
+
+<font face="verdana, arial, helvetica" size="1"><img src="keep_leg_fresh_files/NAVBREAK.GIF" width="95" height="30" border="0"><br>
+
+
+
+
+
+</font><div class="railblock">
+
+<p class="nv2"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/features/" class="nav" target="_top">Special Features</a></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider"><img src="keep_leg_fresh_files/pi04_90x40.gif" alt="Packer Insider" width="90" height="80" border="0"></a></font></p>
+
+
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/news/dec04/287433.asp"><img src="keep_leg_fresh_files/reggiewhite_90x40.gif" alt="Reggie White Remembered" width="90" height="40" border="0"></a></font></p>
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/insider/fan/gallerysubmit.asp"><img src="keep_leg_fresh_files/fanphotos_90x40.gif" alt="Packer Fan Gallery" width="90" height="40" border="0"></a></font></p>
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.onwisconsin.com/fantasysports/"><img src="keep_leg_fresh_files/fantasyfootball_90.gif" alt="Fantasy Football" width="90" height="40" border="0"></a></font></p>
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/packlistserv.asp"><img src="keep_leg_fresh_files/packlistserv.gif" alt="Packer Newsletter" width="90" height="40" border="0"></a></font></p>
+
+
+
+<p class="nv1"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/packer/news/oct03/175939.asp"><img src="keep_leg_fresh_files/lambeaugreatest_promo90x40a.gif" alt="Lambeau Field Moments" width="90" height="40" border="0"></a></font></p>
+
+
+
+<!-- <p class="nv1"><a href="http://www.jsonline.com/packer/lambeau/"><img src="http://graphics.jsonline.com/ads/promos/lambeaupromo.gif" alt="Lambeau Field Renovation - click here" width="90" height="40" border="0"></a></p> -->
+
+
+
+</div>
+
+<font face="verdana, arial, helvetica" size="1"><img src="keep_leg_fresh_files/NAVBREAK.GIF" width="95" height="30" border="0">
+
+</font><div class="railblock">
+
+<p class="nv2"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/" class="nav02" target="_top">Need Help?</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/search.asp" class="nav" target="_top">Searching Archives</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/wireless.asp" class="nav" target="_top">Wireless Access</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/keywordindex.asp" class="nav" target="_top">Site Topics</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/contents.asp" class="nav" target="_top">Table of Contents</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/general/contact.asp" class="nav" target="_top">Contact Staff</a></font></p>
+
+<p class="nv0"><font face="verdana, arial, helvetica" size="1"><a href="http://www.jsonline.com/desk/circulation/" class="nav" target="_top">Subscriptions</a></font></p>
+
+</div>
+
+<font face="verdana, arial, helvetica" size="1"><br></font></td>
+
+<td bgcolor="#ffffff"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td><td bgcolor="#ffffff" align="left" valign="top">
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr>
+
+<td width="75%" align="left" valign="top"><font face="verdana, arial, helvetica" size="1">
+
+<a href="http://www.onwisconsin.com/">ON WISCONSIN</a> :
+
+<a href="http://www.jsonline.com/">JS ONLINE</a> :
+
+<a href="http://www.jsonline.com/packer/">PACKER PLUS ONLINE</a> :
+
+</font></td>
+
+<td width="5%"><img src="keep_leg_fresh_files/SPEC_002.GIF" width="10" height="1" border="0"></td>
+
+<td width="20%" align="center" valign="middle"><font face="verdana, arial, helvetica" size="1">
+
+		<script language="JAVASCRIPT">
+
+		<!--
+
+		function newwin()
+
+		{
+
+			var newWindow = window.open('http://www.journalinteractive.com/utilities/emailstory.asp?url=' + escape(window.location.href),'send','toolbar=0,menubar=0,scrolling=no,scrollbars=yes,resizable=yes,width=280,height=530');
+
+
+
+			if (newWindow.opener == null) {
+
+				newWindow.opener = self;
+
+			}
+
+		}
+
+		// -->
+
+		</script>
+
+<a href="javascript:newwin( )">E-MAIL</a> | <a href="http://www.jsonline.com/packer/news/aug03/161107.asp?format=print">PRINT</a> THIS STORY</font></td></tr></tbody></table>
+
+<h2>Keeping legend fresh</h2>
+<h3>Madison firm gives Packers' tradition a new look</h3>
+
+
+<h5>By DON WALKER<br><a class="bylinelink" href="mailto:dwalker@journalsentinel.com">dwalker@journalsentinel.com</a></h5>
+<h5><i> Last Updated: Aug. 10, 2003</i></h5>
+
+
+<p><b>Green Bay</b>
+ - 
+ As a young boy, Mark Schmitz idolized Donny Anderson, the former running back for the Green Bay Packers.</p>
+<!--Begin Sidebar-->
+<table cellspacing="10" cellpadding="1" width="137" align="right" border="0">
+<tbody>
+<tr>
+<td bgcolor="#cccccc">
+<table class="sbtext" cellspacing="0" cellpadding="5" width="135" border="0"><tbody>
+<tr>
+<td align="left" bgcolor="#333333"><img src="keep_leg_fresh_files/SPEC.GIF" height="5" width="5" align="right" border="0" alt="28780"><font face="arial, helvetica" color="#ffffff"><b>Z-D Studios<br></b></font></td></tr>
+<tr><td align="left" bgcolor="#ffffff"><table border="0"><tbody>
+<tr><td align="center"><a href="http://graphics.jsonline.com/graphics/bym/img/aug03/schmitz081003.jpg">
+<img height="101" src="keep_leg_fresh_files/schmitz081003-125.jpg" width="125" border="0" alt="Mark Schmitz"></a></td></tr>
+<tr><td align="right"><font face="arial, helvetica" size="-2"><i>Photo/<a href="mailto:jkoshollek@journalsentinel.com">Joe Koshollek</a></i></font></td></tr>
+<tr><td align="left"><font face="arial, helvetica" size="1">Longtime
+Packers fan Mark Schmitz dug deep into the team's history to bring its
+look into the 21st century. His Z-D Studios got the job of designing
+the look of team operations at Lambeau Field.<br></font></td></tr>
+</tbody></table></td></tr>
+<tr><td bgcolor="#cccccc"><font face="arial, helvetica" size="-1"><b>About The Company<br></b></font></td></tr>
+<tr><td align="left" bgcolor="#ffffff">
+<font face="arial, helvetica" size="1"><img height="16" src="keep_leg_fresh_files/GENERIC.GIF" width="16" align="bottom" border="0">Founded: 1992.<br>
+
+<img height="16" src="keep_leg_fresh_files/GENERIC.GIF" width="16" align="bottom" border="0">Home office: 111 S. Hamilton St., Jackman Building, on the Capitol Square in Madison.<br>
+
+<img height="16" src="keep_leg_fresh_files/GENERIC.GIF" width="16" align="bottom" border="0">Services:
+A design firm specializing in brand imaging, including logo design, Web
+development, interior and exterior environmental graphic programs,
+multimedia image campaign development.<br>
+
+<img height="16" src="keep_leg_fresh_files/GENERIC.GIF" width="16" align="bottom" border="0">Recent
+clients: Miller Brewing Co., Green Bay Packers, Florida International
+University, University of Wisconsin athletic department, City of
+Madison, American Family Insurance, Great Lakes Cos. (Great Wolf Lodge
+at Wisconsin Dells).<br>
+
+<img height="16" src="keep_leg_fresh_files/GENERIC.GIF" width="16" align="bottom" border="0">Sales: More than $2 million so far this year.<br>
+
+</font>
+</td></tr>
+<tr><td bgcolor="#cccccc"><font face="arial, helvetica" size="-1"><b>How the Zebradog Got Its Name<br></b></font></td></tr>
+<tr><td align="left" bgcolor="#ffffff">
+<font face="arial, helvetica" size="1">Creative director Mark Schmitz
+was talking to an insurance agent when the agent asked Schmitz to spell
+the company's name. "Z as in Zebra, D as in Dog, and then it hit me.
+Zebradog," he said. A zebradog is now the firm's mascot, and can be
+found at <i><a href="http://www.zebradog.com/">www.zebradog.com</a></i><a href="http://www.zebradog.com/">.</a>
+</font>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+<!--End Sidebar-->
+
+
+<p>Like so many other Wisconsinites, the Packers were a part of
+Schmitz's childhood, and he has fond memories of following the team's
+fortunes.</p>
+
+<p>"I have memories of the Super Bowl, memories of Grandpa and all of that black-and-white TV life," Schmitz said.</p>
+
+<p>As if further proof is needed, Schmitz has in his wallet an
+autograph from Hall of Fame quarterback Bart Starr, a keepsake he's had
+since 1975, when Starr signed it at an athletic banquet in Madison.</p>
+
+<p>Packer credentials intact, Schmitz, 40, did not end up playing
+professional football. But the role his Madison-based Z-D Studios
+played in giving the refurbished Lambeau Field a new logo and look will
+play an important part of the Packers' future.</p>
+
+<p>On Sept. 7, the Packers will formally rededicate Lambeau Field in a
+ceremony before the start of the Packers-Minnesota Vikings game.</p>
+
+<p>For the Packers organization, it will be a new chapter in the team's history.</p>
+
+<p>"Lambeau Field has a sense of place like no other place in
+professional sports," said Schmitz, president and creative director of
+Z-D. "It's an awesome experience, to look and stand where you are."</p>
+
+<h3><b>A legend preserved</b></h3>
+
+<p>Set in a historic building near the State Capitol, Z-D Studios is a design firm that specializes in brand imaging.</p>
+
+<p>Formed in 1992, the small company has collared some big clients,
+including Miller Brewing Co., Gillette Co., the University of
+Wisconsin, Westin Hotels and the former Aid Association for Lutherans.
+It was Z-D that redid Miller's visitor center and tour on W. State St.</p>
+
+<p>The Packers made it clear at the beginning of their $295.2 million plan to remodel the stadium that it should have a retro look.</p>
+
+<p>To tie all of the elements together, the Packers wanted a new logo
+that would capture the image of a tradition-laden sports franchise with
+a long history in Green Bay.</p>
+
+<p>In October 2000, Hammes and Co., the firm hired by the Packers to
+manage the construction project, brought in Schmitz to meet with
+Packers executives.</p>
+
+<h3><b>Connected immediately</b></h3>
+
+<p>For Schmitz, it was an opportunity to visually redevelop the historic stadium, yet find a way to "keep the legend alive."</p>
+
+<p>"It was important that we surround fans with the history and the championship feeling that has been there," Schmitz said.</p>
+
+<p>Schmitz said he felt he connected with team officials immediately.</p>
+
+<p>"It's a museum waiting to happen and it's something that, given the
+right understanding of visual brand design and management, you can
+implement strategies throughout the facility that tie the whole
+experience together," he said.</p>
+
+<p>The Packers felt the connection, too.</p>
+
+<p>"The thing that impressed me about Mark is that he has this creative
+expertise. But he really got what we are trying to do. He gets the
+Packers. He understood," said John Jones, Packers executive vice
+president and chief operating officer.</p>
+
+<p>"He got off to such a great start with the Lambeau Field logo," team
+President Bob Harlan said. "From that point on, you had great
+confidence in him."</p>
+
+<h3><b>A 'timeless' logo</b></h3>
+
+<p>Schmitz's challenge was huge. Design a new stadium logo, come up
+with a theme to mark the occasion of the new stadium, redesign the new
+Packers Hall of Fame and plan a new stadium tour for fans, work with
+the new restaurants and retailers in the stadium's Titletown Atrium,
+develop themes for the other attractions inside and coordinate all of
+the efforts with the team's major sponsors.</p>
+
+<p>It was an A to Z project. There had to be a new look for the
+restrooms, the players' tunnel was recast, and changes were made in the
+building's interior and exterior.</p>
+
+<p>Old photos, famous Packers quotations and other historic elements were designed and deployed.</p>
+
+<p>Schmitz and his team began by familiarizing themselves with the
+architecture, old and new. The firm researched the history of the team
+and the stadium and worked with companies such as Miller and Associated
+Bank, which had signed on as major stadium sponsors.</p>
+
+<p>The logo, the image that is supposed to bring it all together, was the key.</p>
+
+<p>"I wanted the logo to be a timeless event. The mark will anchor the
+future of the facility, and the mark should be something the kids can
+relate to and understand, and something grandpas can relate to and
+understand," Schmitz said.</p>
+
+<p>The main logo features a quarterback - "A quarterback image needed
+to be there," Schmitz said - wearing a leather helmet without a
+facemask, his right arm cocked and ready to throw downfield. The words
+"Lambeau Field" dominate the logo, with the words "Since 1957" adorning
+the bottom.</p>
+
+<p>The year 1957 is the year the new City Stadium was opened on the
+site of Lambeau Field. The stadium was renamed Lambeau Field in 1965.</p>
+
+<p>In addition, Schmitz's team designed the "Rebirth of a Legend" patch
+that Packers players will wear on their jerseys only for the Sept. 7
+stadium rededication game against the Vikings. That logo includes the
+'30s style, leather-helmeted quarterback but includes "2003" to mark
+the year the refurbished stadium opened.</p>
+
+<p>Schmitz said the National Football League had to approve the use of the patch for the Vikings game.</p>
+
+<h3><b>Year-round fan experience</b></h3>
+
+<p>From the beginning, the Packers knew they needed a stadium that
+would be an attraction beyond game days during the regular season.</p>
+
+<p>Revenue from stadium attractions, concessions and retail sales has
+become a huge part of a professional sports franchise's bottom line.</p>
+
+<p>The Packers have an advantage on that front.</p>
+
+<p>It has history, tradition, success and a huge fan base that follows the team through good times and bad.</p>
+
+<p>Schmitz, in reworking the Hall of Fame and other attractions at the
+stadium, tried to create more interactivity to bring fans in year-round.</p>
+
+<p>"You can't operate a big box like this and put people in it 11 days
+or so a year," he said. "It won't sustain itself. The idea of a
+365-day-a-year experience at Lambeau is something that will be copied
+by other stadium districts and entertainment districts around the
+country. It has to be that way."</p>
+
+<p>When fans enter the stadium, the retro feel will be evident everywhere.</p>
+
+<p>"You will see all of the retail outlets, all of the restaurants and
+the food spaces, it will all work within the retro style," Schmitz said.</p>
+
+<p>For Schmitz and his team, it has been hectic work that will continue right up to Sept. 7.</p>
+
+
+<br>
+
+
+
+<br clear="all">
+<center><small>From the Aug. 11, 2003 editions of the Milwaukee Journal Sentinel</small></center>
+
+<!-- GOOGLE AD-->
+<br clear="all">
+<center>
+<script language="JavaScript"> 
+<!--
+	DisplayAds('x30',300,250);
+// -->
+</script><script language="JavaScript" src="keep_leg_fresh_files/1872158230x30.js"></script><a href="http://adserver.journalinteractive.com/RealMedia/ads/click_lx.cgi/www.jsonline.com/packer/news/aug03/161107.asp/19945/x30/default/empty.gif/30633837636334653431656464353030" target="_top"><img src="keep_leg_fresh_files/EMPTY.GIF" width="2" height="2" alt="" border="0"></a>
+<noscript><A
+HREF="http://adserver.journalinteractive.com/RealMedia/ads/click_nx.cgi/www.jsonline.com/adsections/new/default@Bottom1"
+TARGET="_top"><IMG
+SRC="http://adserver.journalinteractive.com/RealMedia/ads/adstream_nx.cgi/www.jsonline.com/adsections/new/default@Bottom1"
+BORDER="0"></a></noscript>
+</center>
+<br clear="all">
+<!--END GOOGLE AD-->
+
+<br clear="all">
+<div align="right"><font face="verdana, arial, helvetica" size="1"><a href="#top">BACK TO TOP</a></font></div>
+<br clear="all">
+</td>
+<td bgcolor="#ffffff"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+<td bgcolor="#cccccc"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td><td bgcolor="#cccccc" align="left" valign="top">
+<br clear="all">
+</td>
+<td bgcolor="#cccccc"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+</tr>
+</tbody></table><table width="770" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td rowspan="3" width="3"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="3" height="1" border="0"></td>
+<td rowspan="3" width="15" align="right" valign="top"><img src="keep_leg_fresh_files/leftcap2bottom.gif" width="15" height="45" border="0"></td>
+<td width="737" bgcolor="#999999" align="right" valign="top"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="737" height="3" border="0"></td>
+<td rowspan="3" width="15" align="left" valign="top"><img src="keep_leg_fresh_files/rightcap2bottom.gif" width="15" height="45" border="0"></td>
+</tr>
+
+<tr>
+<td width="737" bgcolor="#333333" align="right" valign="middle"><input type="hidden" name="ct" value="JS2001">
+<input value="FileWrite" name="sd" type="hidden">
+<input value="@filewrite" name="c2" type="hidden">
+<input value="&gt;" name="o2" type="hidden">
+<input value="-1m" name="q2" type="hidden">
+
+<table cellspacing="0" cellpadding="0" border="0">
+
+<form action="http://search.jsonline.com/results.asp" method="get"></form>
+<tbody><tr>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="10" height="39" border="0"></td>
+
+<td align="center" valign="middle"><input type="text" size="15" maxlength="100" name="qu" value="Article search..." class="searchbox" onfocus="this.form.qu.value = ''"></td>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="3" height="1" border="0"></td>
+
+<td align="center" valign="middle"><input type="image" src="keep_leg_fresh_files/btn_go_16x20.gif" alt="GO" width="20" height="16" border="0" class="searchbtn"></td>
+
+<form name="navmainTail"></form>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="20" height="1" border="0"></td>
+
+<td align="center" valign="middle"><select name="locations" class="jsomenu" size="1" onchange="functionnavmainTail()"><option selected="selected">SEARCH OPTIONS/TIPS...</option><option value="http://www.jsonline.com/search/">Archives Online</option><option value="http://www.jsonline.com/search/index.asp#tips">Article Search Tips</option><option value="#"> </option><option value="http://www.jsonline.com/search/">OTHER SEARCHES</option><option value="http://www.onwisconsin.com/adfinder/">AdFinder</option><option value="http://www.onwisconsin.com/arts/">Art Gallery Events</option><option value="http://www.onwisconsin.com/redir/cars.asp">Cars</option><option value="http://www.jsonline.com/classified">Classifieds</option><option value="http://www.jsonline.com/news/obits/">Death Notices</option><option value="http://www.onwisconsin.com/dining/">Dining Guide</option><option value="http://www.onwisconsin.com/homes/">Homes</option><option value="http://www.onwisconsin.com/redir/jobs.asp">Jobs</option><option value="http://www.onwisconsin.com/lottery/">Lottery Results</option><option value="http://www.onwisconsin.com/movies/">Movie Showtimes</option><option value="http://www.onwisconsin.com/redir/maps.asp">Maps &amp; Directions</option><option value="http://www.onwisconsin.com/music/">Night Life Events</option><option value="http://www.onwisconsin.com/redir/personals.asp">Personals</option><option value="http://www.onwisconsin.com/redir/rentals.asp">Rentals</option><option value="http://www.onwisconsin.com/redir/stocks.asp">Stock Quotes</option><option value="http://www.onwisconsin.com/redir/tickets.asp">Tickets</option><option value="http://www.onwisconsin.com/tvradio/">TV Listings</option><option value="http://www.onwisconsin.com/arts/">Performing Arts</option><option value="http://www.onwisconsin.com/redir/yellowpages.asp">Yellow Pages</option><option value="#"> </option><option value="http://www.jsonline.com/">JSONLINE.COM</option><option value="http://www.jsonline.com/">Home Page</option><option value="http://www.jsonline.com/badger/">Badger Plus Online</option><option value="http://www.jsonline.com/bym/">Business &amp; Your Money</option><option value="http://www.jsonline.com/chat/">Chat</option><option value="http://www.jsonline.com/news/editorials/">Editorials</option><option value="http://www.onwisconsin.com/live/">Entertainment</option><option value="http://www.jsonline.com/features/">Features</option><option value="http://www.jsonline.com/entree/">Food &amp; Home</option><option value="http://www.onwisconsin.com/dining/">Dining</option><option value="http://www.jsonline.com/alive/">Health &amp; Fitness</option><option value="http://www.jsonline.com/lifestyle/">Lifestyle</option><option value="http://www.jsonline.com/news/">News</option><option value="http://www.jsonline.com/news/obits/">Obituaries</option><option value="http://www.jsonline.com/photo/">Photo of the Day</option><option value="http://www.jsonline.com/packer/">Packer Plus Online</option><option value="http://www.jsonline.com/packer/insider/">Packer Insider</option><option value="http://www.onwisconsin.com/homes/">Real Estate</option><option value="http://www.jsonline.com/sports/">Sports</option><option value="http://www.jsonline.com/tech/">Technology</option><option value="http://www.onwisconsin.com/travel/">Travel</option><option value="http://www.jsonline.com/traffic/">Traffic</option><option value="http://www.onwisconsin.com/weather/">Weather</option><option value="http://www.onwisconsin.com/cars/">Cars</option><option value="#"> </option><option>JOURNAL SENTINEL SERVICES</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Start a subscription</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Place a vacation hold</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Pay your bill online</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Report a service concern</option><option value="http://www.onwisconsin.com/redir/servicecenter.asp">Change of address</option></select></td>
+
+<td><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+</tr>
+
+
+
+	<script language="javascript">
+	<!--
+	function functionnavmainTail()
+	{parent.location=document.navmainTail.locations.options[document.navmainTail.locations.selectedIndex].value}
+	//-->
+	</script>
+
+</tbody></table></td>
+</tr>
+<tr>
+<td bgcolor="#000000" align="right" valign="top"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="737" height="3" border="0"></td>
+</tr>
+</tbody></table>
+<table width="770" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td rowspan="2" width="12"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="12" height="5" border="0"></td>
+<td rowspan="2" width="1" bgcolor="#666666"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="5" border="0"></td>
+<td width="5" bgcolor="#ffffff"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+<td width="739" bgcolor="#ffffff" align="center"><font face="verdana, arial, helvetica" size="1">
+
+<br>
+<a href="http://www.jsonline.com/copyright.html">© Copyright 2005</a>, Journal Sentinel Inc. All rights reserved.<br>
+Produced by <a href="http://www.journalinteractive.com/">Journal Interactive</a> | 
+<a href="http://www.jsonline.com/general/privacy.asp">Privacy Policy</a><br>
+<br>
+Journal Sentinel Inc. is a subsidiary of <a href="http://www.jc.com/">Journal Communications</a><br>
+
+<br clear="all"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="739" height="1" border="0"></font></td>
+<td width="5" bgcolor="#ffffff"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="5" height="1" border="0"></td>
+<td rowspan="2" width="1" bgcolor="#666666"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="1" height="1" border="0"></td>
+<td rowspan="2" width="8"><img src="keep_leg_fresh_files/SPEC_003.GIF" width="8" height="1" border="0"></td>
+</tr>
+</tbody></table></body></html>

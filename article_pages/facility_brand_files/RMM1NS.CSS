@@ -1,0 +1,1185 @@
+<style type="text/css">
+	.na { /* RM styles 2004	*/ }
+
+	A.chlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		color : White;
+		text-decoration : none;
+		text-align : center;
+	}
+	A.chlink:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border : 0px Black;
+		color : Yellow;
+		text-decoration : none;
+		text-align : center;
+	}
+	.chlinktext {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		color : AF454E;
+		padding-top : 0;
+		padding-bottom : 0;
+		text-align : center;
+	}
+
+	A.issuecover {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border : 1px Black;
+		font-size : 8pt;
+		color : White;
+		text-decoration : none;
+		text-align : center;
+	}
+	A.issuecover:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border : 1px #a0522d;
+		color : Yellow;
+		text-decoration : none;
+		text-align : center;
+	}
+	A.issuecover:VISITED {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border : 1px #a0522d;
+		color : Yellow;
+		text-decoration : none;
+		text-align : center;
+	}
+
+
+	A.bottomlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		background-color : Navy;
+		color : White;
+		text-decoration : underline;
+	}
+	A.bottomlink:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		color : Yellow;
+		background-color : Navy;
+		text-decoration : none;
+	}
+
+	A.bottomlink2005 {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		background-color : #000000;
+		color : White;
+		text-decoration : underline;
+	}
+
+	A.bottomlink2005:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		color : Yellow;
+		background-color : #000000;
+		text-decoration : none;
+	}
+
+	A.tinybottomlink2005:link {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 7pt;
+		color : White;
+		text-decoration : underline;
+	}
+
+	A.tinybottomlink2005:active {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 7pt;
+		color : White;
+		text-decoration : underline;
+	}
+
+	A.tinybottomlink2005:visited {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 7pt;
+		color : White;
+		text-decoration : underline;
+	}
+
+	A.tinybottomlink2005:hover {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 7pt;
+		color : Yellow;
+		text-decoration : none;
+	}
+	.tinybottomtext {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 7pt;
+		background-color : #AF454E;
+		color : White;
+	}
+
+	a.buygdlink_1 {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Black;
+		text-decoration : none;
+		line-height : 130%;
+	}
+	a.buygdlink_1:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Blue;
+		text-decoration : none;
+		line-height : 130%;
+	}
+
+	a.buygdlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 9pt;
+		color : Black;
+		text-decoration : none;
+	}
+	a.buygdlink:HOVER {
+		color : Blue;
+		text-decoration : none;
+	}
+
+	a.buygdlink_comp {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Black;
+		text-decoration : none;
+	}
+	a.buygdlink_comp:HOVER {
+		color : Blue;
+		text-decoration : none;
+	}
+
+	a.buygdlink_comp2 {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Black;
+		text-decoration : none;
+	}
+	a.buygdlink_comp2:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Blue;
+		text-decoration : none;
+	}
+
+	A.contact {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Black;
+		text-decoration : underline;
+	}
+	A.contact:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Blue;
+		text-decoration : none;
+	}
+
+	A.feature {
+		background-color : #AF454E;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 12pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		text-decoration : none;
+	}
+
+	A.toclink {
+		font-family:verdana,arial,helvetica;
+		font-size:13px;
+		padding: 2px 2px 2px 2px;
+		color : White;
+		text-decoration : none;
+	}
+	A.toclink:HOVER {
+		font-family:verdana,arial,helvetica;
+		font-size:13px;
+		padding: 2px 2px 2px 2px;
+		color : Yellow;
+		text-decoration : none;
+	}
+
+	a.pslink_company {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Blue;
+		text-decoration : underline;
+	}
+	a.pslink_company:HOVER {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		color : Black;
+		text-decoration : underline;
+	}
+
+	p.buygdlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Black;
+		margin-bottom : 0;
+		margin-top : 0;
+	}
+
+	.pagetitle {
+		font-family : Arial, Helvetica, sans-serif;
+		font-weight : bold;
+		font-size : 10pt;
+		color : White;
+	}
+
+	.linkhead {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-weight : bold;
+		font-size : 10pt;
+		background-color : #6699CC;
+		color : #B6CEE2;
+		padding-bottom : 2;
+		padding-left : 2;
+		padding-right : 2;
+		padding-top : 2;
+	}
+
+	.link {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		background-color : #B6CEE2;
+		color : Black;
+	}
+
+	li {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		margin_left : 0;
+	}
+
+	p {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		margin-top : 0px;
+		margin-bottom : 7px;
+	}
+
+	p.mediafilelist {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		margin-top : 0px;
+		margin-bottom : 4px;
+	}
+
+	p.company {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+	}
+	p.company_desc {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+	}
+	p.featured {
+		font-family : Arial, Helvetica, sans-serif;
+		font-weight : bold;
+		font-size : 12pt;
+	}
+	p.tocsum {
+		margin-bottom : 5px;
+		margin-top : 5px;
+	}
+	p.tocdesc {
+		margin-bottom : 4px;
+		margin-top : 4px;
+	}
+	.company {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+	}
+	.compinfo {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		margin-bottom : 4px;
+		margin-top : 4px;
+	}
+	.compinfolabel {
+		font-family : sans-serif;
+		font-size : 7pt;
+	}
+	.button {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		background-color: Navy;
+		color: #F0F8FF;
+		border-color: #F0FFFF;
+		font-weight : bold;
+		border : medium;
+	}
+	.copyright {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 8pt;
+		color : White;
+	}
+
+	.colhead {
+		font-family : Arial, Helvetica, sans-serif;
+		font-weight : normal;
+		font-size : 16pt;
+		color : White;
+	}
+
+	/* ============================  issue contents table styles */
+	TABLE.feature {
+		border: 0;
+		padding-bottom : 0px;
+		padding-left : 0px;
+		padding-right : 0px;
+		padding-top : 0px;
+	}
+	TD.feature {
+		background-color : #af454e;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 1px;
+		padding-bottom: 3px;
+		width : 100%;
+	}
+	TD.issue_header {
+		background-color : #000000;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 1px;
+		padding-bottom: 3px;
+		width : 100%;
+	}
+	TD.feature_title {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		font-weight : bold;
+		padding-top: 6px;
+		padding-left: 5px;
+	}
+	TD.feature_subtitle {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight : bold;
+		padding-top: 6px;
+		padding-left: 10px;
+	}
+	TD.feature_desc {
+		font-size : 9pt;
+		padding-left: 20px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	/* ====================  ARCHIVE CONTENTS TABLE/LINK STYLES =================== */
+	TABLE.archives {
+		border: 0;
+		padding-bottom : 0px;
+		padding-left : 0px;
+		padding-right : 0px;
+		padding-top : 0px;
+	}
+	TD.archives {
+		background-color : #af454e;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #ffffff;
+		font-size : 10pt;
+		font-weight : bold;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		width : 100%;
+	}
+	TD.archives_title {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 5px;
+	}
+	TD.archives_subtitle {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 9pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 10px;
+	}
+	TD.archives_desc {
+		font-size : 9pt;
+		padding-left: 2px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	p.archives_desc {
+		font-size : 9pt;
+		padding-left: 2px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	A.archives {
+		background-color : #af454e;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #ffffff;
+		font-size : 8pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		text-decoration : none;
+	}
+	.archive-issue {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	A.archive {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		color : Black;
+		text-decoration : none;
+		font-weight : bold;
+	}
+	A.archive:HOVER {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 2px 2px 2px 2px;
+		color : Blue;
+		text-decoration : none;
+		font-weight : bold;
+	}
+
+	/* ====================  HOME PAGE CONTENTS TABLE/LINK STYLES =================== */
+	TABLE.homepage {
+		border: 0;
+		padding-bottom : 0px;
+		padding-left : 0px;
+		padding-right : 0px;
+		padding-top : 0px;
+	}
+	TD.homepage {
+		background-color : #ffffff;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #000000;
+		font-size : 10pt;
+		font-weight : bold;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		width : 100%;
+		border : 1 solid #000000;
+	}
+	TD.homepage2 {
+		background-color : #ffffff;
+		font-family : Arial, Helvetica, sans-serif;
+		color :  #000000;
+		font-size : 12pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-bottom: 0px;
+		width : 100%;
+		border : 1 solid #000000;
+	}
+	TD.homepage_title {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 5px;
+	}
+	TD.homepage_subtitle {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 10px;
+	}
+	TD.homepage_desc {
+		font-size : 9pt;
+		padding-left: 2px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	p.homepage_desc {
+		font-size : 9pt;
+		padding-left: 2px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	A.homepage1 {
+		background-color : #af454e;
+		font-family : Arial, Helvetica, sans-serif;
+		color : #ffffff;
+		font-size : 8pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		text-decoration : none;
+	}
+	.homepage-issue {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	A.homepage {
+		font-family: Arial, Helvetica, sans-serif;
+		color : #af454e;
+		font-weight : bold;
+	}
+	A.homepage:HOVER {
+		font-family: Arial, Helvetica, sans-serif;
+		color : #000000;
+		font-weight : bold;
+	}
+	A.homepage:ACTIVE {
+		font-family: Arial, Helvetica, sans-serif;
+		color : #000000;
+		font-weight : bold;
+	}
+	A.homepage:VISITED {
+		font-family: Arial, Helvetica, sans-serif;
+		color : #af454e;
+		font-weight : bold;
+	}
+
+
+
+	/* ============================  product showcase styles */
+	.pshead {
+		background-color : #AF454E;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 1em;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	.psheadsection {
+		background-color : #FFFFFF;
+		font-family : Arial, Helvetica, sans-serif;
+		color : Black;
+		font-size : 1.2em;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 4px;
+		padding-bottom: 2px;
+		padding-right: 4px;
+		width : 100%;
+	}
+	.pstitle {
+		font-family : "Times New Roman", Times, serif;
+		font-size : 13pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	.pstext {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 9pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.pscomp {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	.psrc {
+		font-family : "Times New Roman", Times, serif;
+		font-size : 11pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	.ss {
+		font-size : 70%;
+		vertical-align : text-top;
+	}
+	.pagehead {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 18pt;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	.pagehead2 {
+		font-family : "Times New Roman", Times, serif;
+		font-size : 1.3em;
+		font-weight : bold;
+		margin : 0px 0px 0px 0px;
+		padding : 0px 0px 0px 0px;
+	}
+	.defaulttext {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 1em;
+	}
+	.smalltext {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : .9em;
+	}
+	.tinytext {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : .8em;
+	}
+
+	.iltabbold {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : .9em;
+		font-weight : bold;
+	}
+	.iltabnb {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : .9em;
+	}
+
+	/* ====================  ARTICLE CONTENT TABLE/LINK STYLES =================== */
+
+	.leadingcaptr {
+		font-family : "Times New Roman", Times, serif;
+		font-size : 18pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+
+	.article_title {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 18pt;
+		font-weight : bold;
+		padding-top: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.article_subtitle {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : normal;
+		padding-top: 10px;
+		padding-left: 0px;
+	}
+
+	.article_author {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight : bold;
+		padding-top: 10px;
+		padding-left: 0px;
+	}
+
+	.textheavy {
+		font-family : "Arial Black", Arial, Helvetica, sans-serif;
+		font-size : 16pt;
+		font-weight : bold;
+		margin : 0;
+		padding : 0;
+	}
+
+	.sectheadheavy {
+		font-family : "Arial Black", Arial, Helvetica, sans-serif;
+		font-size : 18pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+	.sectheadlrg {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 18pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+	.secthead {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+	.sectsubhead {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.leadingcap200510 {
+		font-family : "Times New Roman", Times, serif;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+
+	.headtag {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 0px;
+		padding-left: 0px;
+		color : White;
+		background-color : Black;
+		border : 2 Black;
+	}
+	.inpicsl {
+		border-width : 1;
+		border-color : Black Black Black Black;
+		margin-top : 8;
+		margin-right : 8;
+		margin-left : 0;
+		margin-bottom : 2;
+	}
+	.inpicslnb {
+		border-width : 1;
+		border-color : White;
+		margin-top : 8;
+		margin-right : 8;
+		margin-left : 0;
+		margin-bottom : 2;
+	}
+	.inpicsr {
+		border-width : 1;
+		border-color : Black Black Black Black;
+		margin-top : 8;
+		margin-right : 0;
+		margin-left : 8;
+		margin-bottom : 2;
+	}
+	.inpicsc {
+		border-width : 1;
+		border-color : Black Black Black Black;
+		margin-top : 8;
+		margin-right : 0;
+		margin-left : 0;
+		margin-bottom : 2;
+	}
+	.inpicsrnb {
+		border-width : 0;
+		border-color : White;
+
+		margin-top : 8;
+		margin-right : 0;
+		margin-left : 8;
+		margin-bottom : 2;
+	}
+	.inpicnb {
+		border-width : 0;
+		border-color : Black Black Black Black;
+		padding : 0px 0px 0px 0px;
+		margin-top : 8;
+		margin-right : 8;
+		margin-left : 8;
+		margin-bottom : 2;
+	}
+	.inpicscnb {
+		border-width : 0;
+		border-color : Black Black Black Black;
+		padding : 0px 0px 0px 0px;
+		margin-top : 4;
+		margin-right : 0;
+		margin-left : 0;
+		margin-bottom : 4;
+	}
+	.imagecaption {
+		font-family : sans-serif;
+		font-size : 9pt;
+		font-weight : bold;
+		padding-left : 5;
+		padding-right : 5;
+		padding-bottom : 2;
+	}
+	.imagecredit {
+		font-family : sans-serif;
+		font-size : 6pt;
+		padding-right : 10;
+		padding-top : 0;
+	}
+	.imagecredit_lt {
+		font-family : sans-serif;
+		font-size : 6pt;
+		padding-right : 12;
+		padding-top : 0;
+	}
+	.imagecredit_cen {
+		font-family : sans-serif;
+		font-size : 6pt;
+		padding-right : 5;
+		padding-top : 0;
+	}
+	.imagecredit_rt {
+		font-family : sans-serif;
+		font-size : 6pt;
+		padding-right : 4;
+		padding-top : 0;
+	}
+
+	TD.event_month {
+		background-color : #AF454E;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		width : 100%;
+	}
+	TD.event_org {
+		background-color : transparent;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 14pt;
+		font-weight : bold;
+		padding-top: 6px;
+		padding-left: 5px;
+	}
+	TD.event_desc {
+		background-color : transparent;
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		font-weight : bold;
+		padding-top: 6px;
+		padding-left: 10px;
+	}
+	TD.event_info {
+		background-color : transparent;
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		padding-left: 20px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	TD.home_event_month {
+		background-color : #AF454E;
+		font-family : Arial, Helvetica, sans-serif;
+		color : White;
+		font-size : 11pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		width : 100%;
+	}
+	TD.home_event_org {
+		background-color : Black;
+		color : White;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 2px;
+	}
+	TD.home_event_desc {
+		background-color : White;
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 9pt;
+		font-weight : bold;
+		padding-top: 2px;
+		padding-left: 2px;
+	}
+	TD.home_event_info {
+		background-color : White;
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 9pt;
+		padding-left: 4px;
+		margin-bottom : 1px;
+		margin-top : 1px;
+	}
+	TD.ps_nonlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		color : Black;
+		text-decoration : none;
+		background-color : #EFEFF7;
+	}
+	.defpar {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		margin-top : 0px;
+		margin-bottom : 7px;
+	}
+	td {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		margin-top : 0px;
+		margin-bottom : 7px;
+	}
+
+	/* =================================================== AWARDS ==================*/
+	.aw_sub_head {
+		color: #000000;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		font-weight : bold;
+		margin-top : 14px;
+		margin-bottom : 7px;
+	}
+
+	.aw_sub_firm {
+		color: #000000;
+		font-family : Arial, Helvetica, sans-serif;
+		/*		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-family: 'MS Serif', 'New York', serif;  */
+		font-size : 13pt;
+		font-weight : bold;
+		margin-top : 7px;
+		margin-bottom : 7px;
+		text-transform: uppercase;
+	}
+
+	.aw_sub_labels {
+		font-weight: bold;
+		color: #1d66b8;
+		font-size : 8pt;
+		text-transform: uppercase;
+	}
+
+	.aw_sub_par {
+		margin-top : 9px;
+		margin-bottom : 3px;
+		font-size : 9pt;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	li.aw_sub_listitem {
+		list-style-image: url(../200511gc03.php_files/images/list_image_star_med_blue.gif);
+		font-weight: bold;
+		font-size : 9pt;
+		margin-top : 3px;
+		margin-bottom : 3px;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	.aw_jn_head {
+		color: #000000;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 13pt;
+		font-weight : bold;
+		margin-top : 14px;
+		margin-bottom : 7px;
+	}
+
+	.aw_jn_quote {
+		margin-top : 3px;
+		margin-bottom : 3px;
+		font-size : 9pt;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	.aw_jn_name {
+		margin-top : 3px;
+		margin-bottom : 3px;
+		font-weight: bold;
+		font-size : 10pt;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+	}
+
+	.aw_firm_head {
+		color: #ffffff;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 13pt;
+		font-weight : bolder;
+		margin-top : 14px;
+		margin-bottom : 7px;
+	}
+
+	.aw_firm_subhead {
+		color: #ffa07a;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		font-weight : bold;
+		margin-top : 16px;
+		margin-bottom : 0px;
+		text-transform: uppercase;
+	}
+
+	.aw_firm_subhead_hilite {
+		color: #87CEEB;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12pt;
+		font-weight : bold;
+		margin-top : 16px;
+		margin-bottom : 0px;
+		text-transform: uppercase;
+	}
+
+	.aw_firm_name {
+		color: #ffffff;
+		margin-top : 0px;
+		margin-bottom : 3px;
+		font-weight: bold;
+		font-size : 10pt;
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	A.awards {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 1px 1px 1px 1px;
+		font-size: 13pt;
+		color : #ffffff;
+		text-decoration : underline;
+		font-weight : bold;
+	}
+	A.awards:hover {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 1px 1px 1px 1px;
+		color : #ffff99;
+		text-decoration : underline;
+		font-weight : bold;
+	}
+
+	a.awardlink {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Black;
+		text-decoration : underline;
+	}
+	a.awardlink:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color : Blue;
+		text-decoration : none;
+	}
+
+	a.awardlink2005a {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		color : Black;
+		text-decoration : underline;
+		font-weight: bold;
+	}
+	a.awardlink2005b {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		color : #3333cc;
+		text-decoration : underline;
+		font-weight: bold;
+	}
+	a.awardlink2005a:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color : #cc6600;
+		font-weight: bold;
+	}
+	a.awardlink2005b:HOVER {
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color : #cc6600;
+		font-weight: bold;
+	}
+
+	.awards_authors {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 1px 1px 1px 1px;
+		font-size: 13pt;
+		color : #ffffff;
+		font-weight : bold;
+	}
+
+	.inlineimagecaption {
+		font-family : sans-serif;
+		font-size : 9pt;
+		font-weight : bold;
+		padding-left : 5;
+		padding-right : 5;
+		padding-bottom : 2;
+		text-align : left;
+	}
+	.inlineimagecredit {
+		font-family : sans-serif;
+		font-size : 6pt;
+		font-weight : bold;
+		padding-left : 5;
+		padding-right : 5;
+		padding-bottom : 2;
+		text-align : right;
+	}
+
+	/* ================== AWARDS END ==================*/
+
+	td.floortype {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		margin-top : 0px;
+		margin-bottom : 0px;
+		padding-right : 15px;
+		padding-left : 15px;
+		vertical-align : top;
+	}
+
+	.problemsolverhead {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		color: #0000CD;
+		font-weight : bold;
+		padding-top: 4px;
+		padding-left: 0px;
+		padding-bottom: 2px;
+	}
+	.problemsolvertitle {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		font-weight : bold;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.problemsolvertext {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 10pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.bg_msg_label {
+		font-family : sans-serif;
+		font-size : 11px;
+		font-weight : bold;
+		border: 1px solid White;
+		background: #000080;
+		color: White;
+	}
+
+	.shadow {
+		width: 100%;
+		filter: Shadow(Color=#393939, Direction=155)}
+
+	/*  ======================================================  */
+	/*  ===================== Search Tips =======================  */
+
+	.SearchDescription {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+	}
+	.SearchWord {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	.SearchWordExplanation {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		margin-bottom: 5px;
+		margin-left: 30px;
+	}
+	.StopWordsBlock {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+	}
+	.StopWords {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11pt;
+		display: inline;
+		color: #444444;
+	}
+	.StopWordsExplanation {
+	}
+
+
+	/*  ======================================================  */
+</style>

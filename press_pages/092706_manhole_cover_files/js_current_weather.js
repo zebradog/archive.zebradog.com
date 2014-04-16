@@ -1,0 +1,1 @@
+document.write("<P CLASS='weathertop'>High Today: 58</P>");

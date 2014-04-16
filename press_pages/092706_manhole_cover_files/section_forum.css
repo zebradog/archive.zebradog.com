@@ -1,0 +1,23 @@
+TABLE.topicsAnywhere { 
+	color: Black;
+	background-color: #999999
+}
+
+TD.topicsAnywhereHeader { 
+        color: Black;
+        background-color: Black
+        color: White;
+        font-family: verdana, helvetica,arial,sans-serif;
+        font-size: 10px; 
+        line-height: 15px
+}
+
+TD.topicsAnywhere {
+        padding: 3px;
+        background-color: #ffffff;
+	color: Black;
+	font-family: verdana, helvetica,arial,sans-serif;
+        font-size: 10px;
+        line-height: 15px
+
+}

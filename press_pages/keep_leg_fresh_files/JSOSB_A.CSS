@@ -1,0 +1,18 @@
+/* LAST UPDATED BY STANTON 10/05/04 3:10 p.m. */
+.sidebar {margin: 10px 0px 15px 15px; border-bottom: 1px solid #ccc;}
+.sb_gen {font: normal 10px/12px verdana, arial, helvetica; color: #000;}
+.sb_blank {font: normal 10px/12px verdana, arial, helvetica; color: #000;}
+.sb_leadin {font: normal 10px/12px verdana, arial, helvetica; color: #000; background: #fff; border: 1px solid #ccc;}
+.sb_hed {font: bold 16px/18px arial, helvetica; color: #fff; background: #333; border: 1px solid #333;}
+.sb_subhed {font: bold 13px/16px arial, helvetica; color: #000; background: #ccc; border: 1px solid #ccc;}
+.sb_base {font: normal 10px/12px verdana, arial, helvetica; color: #000; background: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+.sb_base ul {padding: 0; margin: 0;}
+.sb_base li {padding: 2px 2px 2px -1px; margin: 0 0 0 15px; font-family: verdana; font-size: 0.90em; list-style-type: square; color: #333;}
+.sb_btn {margin: 2px 0px; 0px 0px; padding: 0px;}
+.sb_gpix {text-align: center; margin: 0px; padding: 0px; border: 0px;}
+.sb_credit {font: italic 10px/12px verdana, arial, helvetica; color: #000; text-align: right; margin: 3px 0px 5px 0px; padding: 0px;}
+.sb_caption {font: normal 10px/12px verdana, arial, helvetica; color: #000; text-align: left; margin: 3px 0px 5px 0px; padding: 0px;}
+.sb_quotetext {font: bold 14px/16px arial, helvetica; color: #000; text-align: left; margin: 3px 0px 3px 0px; padding: 0px;}
+.sb_quotecredit {font: italic 12px/14px arial, helvetica; color: #000; text-align: right; margin: 3px 0px 3px 0px; padding: 0px;}
+.videoplayer {margin: 0px; border-bottom: 1px solid #ccc;}
+

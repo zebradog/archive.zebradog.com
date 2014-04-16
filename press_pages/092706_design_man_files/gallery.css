@@ -1,0 +1,107 @@
+h3.pGalHead
+{
+	margin: 0px 0px 1px 0px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+h1.pGalName
+{
+	margin: 0px 0px 12px 0px;
+	color: #666666;
+	font-size: 24px;
+}
+
+
+table#photoGallery { margin: 0px -6px 0px -6px; }
+
+
+td.galleryTnail
+{
+	width: 140px;
+	height: 140px;
+	background-color: #E5E5E5;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+	border-color: #999999 #CCCCCC #CCCCCC #999999;
+	border-width: 1px;
+	border-style: solid;
+}
+p.pGalInstr
+{
+	font-style: italic;
+	text-align: left;
+	font-size: 11px;
+}
+
+table#slideShow { width: 716px }
+
+td.slideTopNav
+{
+	border-color: #999999 #CCCCCC #CCCCCC #999999;
+	border-width: 1px;
+	vertical-align: middle;
+	padding: 9px 6px 6px 6px;
+	background-color: #E5E5E5;
+}
+
+td#slideTopNavPrev
+{
+	text-align: right;
+	border-style: solid none none solid;
+}
+
+td#slideTopNavUp { text-align: center; border-style: solid none none none; }
+
+td#slideTopNavNext { text-align: left; border-style: solid solid none none; }
+
+td#slideImage
+{
+	border-color: #999999 #CCCCCC #CCCCCC #999999;
+	border-width: 1px;
+	border-style: none solid none solid;
+	background-color: #E5E5E5;
+	text-align: center;
+	padding: 0px 6px 6px 6px;
+	vertical-align: middle;
+}
+
+td#slideCaption
+{
+	border-color: #999999 #CCCCCC #CCCCCC #999999;
+	border-width: 1px;
+	border-style: none solid solid solid;
+	background-color: #E5E5E5;
+	text-align: center;
+	padding: 0px 6px 9px 6px;
+	vertical-align: top;
+}
+
+
+a.slideNavBttn
+{
+	padding: 4px 6px 5px 6px;
+	font-weight: bold;
+}
+
+a.slideNavBttn:link,a.slideNavBttn:link,a.slideNavBttn:visited
+{
+	text-decoration: none;
+	color: #003366;
+	background-color: #FFFFFF;
+	border-color: #CCCCCC #CCCCCC #999999 #999999;
+	border-width: 1px;
+	border-style: solid;
+}
+
+a.slideNavBttn:hover,a.slideNavBttn:active
+{
+	text-decoration: none;
+	background-color: #CCCCCC;
+	border-color: #666666 #666666 #999999 #999999;
+	border-width: 1px;
+	border-style: solid;
+}
+

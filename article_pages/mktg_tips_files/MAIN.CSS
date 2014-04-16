@@ -1,0 +1,155 @@
+/*GB Main Article's Definition for the home page*/
+.gb1 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+}
+.gb2 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+}
+.gb3 
+{
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    LINE-HEIGHT: 9pt
+}
+.think 
+{
+    COLOR: #1F3A77;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 16pt
+}
+.tankhead 
+{
+    COLOR: #9A3732;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 14pt
+}
+.con 
+{
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+
+.gbnew 
+{
+    COLOR: #41754B;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 10pt
+}
+
+.gbnews
+{
+    COLOR: #1F3A77;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 11pt
+}
+
+.gbmark1
+{
+    COLOR: #1F3A77;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    LINE-HEIGHT: 10pt
+}
+
+.gbmark
+{
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 7pt;
+    LINE-HEIGHT: 9pt
+}
+
+.gbd 
+{
+    COLOR: #9B3833;
+    FONT-FAMILY: Tahoma, Verdana, Arial;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 10pt
+}
+
+/*GB Left Column Headers Definition for the home page*/
+.gbleft 
+{
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+.gbleft1
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+
+
+/*GB Article Header Definitions for the home page*/
+.gbmainhead 
+{
+    COLOR: #333366;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 12pt
+}
+/*Main Header Definition for pageview page*/
+.pageviewbody
+{
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 10pt
+}
+/*GB Article Sub-Header Definitions for the home page*/
+.head 
+{
+    COLOR: #333366;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: BOLD;
+    LINE-HEIGHT: 10pt
+}
+INPUT
+{
+    COLOR: #D40000;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 8pt;
+    HEIGHT: 13pt;
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid;
+}
+select
+{
+    COLOR: #D40000;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    LINE-HEIGHT: 8pt;
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid
+}

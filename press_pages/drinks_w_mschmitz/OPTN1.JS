@@ -1,0 +1,13 @@
+var ADSERVER_POPS_VAL=0;
+document.write('<HTML>');
+document.write('<HEAD>');
+document.write('<TITLE>&nbsp;</TITLE>');
+document.write('</HEAD>');
+document.write('<BODY>');
+document.write('<OBJECT classid=\'clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\' codebase=\'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0\' WIDTH=160 HEIGHT=600>');
+document.write('<PARAM NAME=movie VALUE=\'http://bannerfarm.ace.advertising.com/bannerfarm/88712/mortgage_160x600_h1320.swf?clickTag=http://servedby.advertising.com/click/site=0000715682/mnum=0000302284\'>');
+document.write('<PARAM NAME=quality VALUE=high>');
+document.write('<EMBED src=\'http://bannerfarm.ace.advertising.com/bannerfarm/88712/mortgage_160x600_h1320.swf?clickTag=http://servedby.advertising.com/click/site=0000715682/mnum=0000302284\' quality=high WIDTH=160 HEIGHT=600 TYPE=\'application/x-shockwave-flash\' PLUGINSPAGE=\'http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\'></EMBED>');
+document.write('</OBJECT>');
+document.write('</BODY>');
+document.write('</HTML>');

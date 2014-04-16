@@ -1,0 +1,216 @@
+td { padding: 0px; }
+
+table#topLogo
+{
+	width: 750px;
+	background-color: #E1DECC;
+}
+td#topLogo
+{
+	text-align: left;
+	vertical-align: bottom;
+}
+td#topSponsor
+{
+	padding: 4px 8px 4px 8px;
+	text-align: right;
+	vertical-align: top;
+}
+td#chartSponsor
+{
+	background-color: #000000;
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	width: 232px;
+	padding: 2px 1px 1px 1px;
+}
+
+table#storyTable
+{
+	width: 750px;
+}
+td#navThread
+{
+	background-color: #4D0000;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 10px 3px 10px;
+}
+td#volNbr
+{
+	background-color: #4D0000;
+	color: #FFFFFF;
+	font-size: 11px;
+	padding: 2px 10px 3px 10px;
+	text-align: center;
+}
+a.navThread { color: #FFFFFF; text-decoration: none;  }
+a:link.navThread { color: #FFFFFF; text-decoration: none;  }
+a:visited.navThread { color: #FFFFFF; text-decoration: none;  }
+a:active.navThread { color: #FFCC33; text-decoration: underline;  }
+a:hover.navThread { color: #FFCC33; text-decoration: underline;  }
+
+td#storyMain
+{
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+td#homeMain
+{
+	padding: 0px;
+	text-align: left;
+	vertical-align: top;
+}
+table#coverStoryText
+{
+	width: 536px;
+	height: 252px;
+}
+td#coverStoryPhotoThru
+{
+}
+td#coverStoryText
+{
+	background-repeat: repeat;
+	width: 290px;
+	vertical-align: middle;
+}
+
+h1.coverStoryHead
+{
+	margin: 0px 18px 4px 18px;
+	font-size: 21px;
+}
+p.coverStoryDeck
+{
+	margin: 0px 18px 0px 18px;
+	font-size: 12px;
+	line-height: 17px;
+}
+h4.coverStoryFulltext
+{
+	margin: 4px 18px 9px 18px;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+div#storiesList { padding: 5px; }
+
+h2.storyLinkHead
+{
+	font-size: 13px;
+	margin: 0px 0px 2px 0px;
+}
+
+p.storyLinkAbstract
+{
+	margin: 0px 0px 9px 0px;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+td#rightRail
+{
+	text-align: left;
+	vertical-align: top;
+	width: 166px;
+	padding: 0px;
+}
+td#rightRail { width: 166px; }
+h1.storyHead
+{
+	margin: 0px 0px 9px 0px;
+	font-size: 18px;
+}
+h4.byline
+{
+	font-size: 10px;
+	margin: -4px 0px 9px 0px;
+}
+
+table.adLgRectHldr
+{
+	width: 336px;
+	margin: 6px 0px 6px 12px;
+}
+td.adLgRectHdr
+{
+	background-color: #336699;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 10px 3px 10px;
+	text-align: center;
+}
+td#storiesEven 
+{ 
+	padding: 4px 8px 4px 8px;
+	background-color: #E1DECC;
+}
+td#storiesOdd 
+{ 
+	padding: 4px 8px 4px 8px;
+        background-color: #FFFFFF; 
+}
+td.bizIndexHome
+{
+	padding: 6px 3px 6px 3px;
+}
+h3.bizIndex
+{
+	margin: 0px 0px 3px 0px;
+	font-size: 12px;
+}
+td.storyPhoto
+{
+	background-color: #FFFFFF;
+	padding: 6px 3px 6px 3px;
+}
+img.storyPhoto
+{
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+}
+p.cutline
+{
+	font-size: 10px;
+	font-weight: bold;
+	margin: 2px 0px 6px 0px;
+}
+td.rtRailResources { padding: 0px 3px 6px 3px; }
+h3.resourcesHead
+{
+	background-color: #336699;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 8px 3px 8px;
+	text-align: left;
+	margin: 0px -3px 6px -3px;
+}
+h4.resources
+{
+	margin: 0px 4px 4px 4px;
+	font-size: 11px;
+}
+
+div#coverStory { padding: 24px; background-repeat: no-repeat;
+}
+
+
+p.enlargeImage
+{
+	font-size: 9px;
+	text-align: right;
+	margin: 0px 0px 2px 0px;
+}
+
+
+p#copyright { margin: 0px 0px 9px 0px; }

@@ -1,0 +1,1 @@
+document.write("<P CLASS='weathertop'>Current: 28&deg;F</P>")
